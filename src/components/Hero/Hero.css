@@ -1,6 +1,7 @@
 .hero-container{
    width: 100%;
    position: relative;
+   padding: 0.5rem 0;
 }
 
 .hero-img{
@@ -15,7 +16,7 @@
     width: 100%;
     z-index: -1;
     position: relative;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .hero-content{

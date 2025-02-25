@@ -1,0 +1,30 @@
+.nav-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-container h1{
+    font-family: "Italiana", serif;
+    color: #344D0C;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.nav-links{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 2rem;
+    justify-self: end;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+.nav-links ul li{
+    color: #344D0C;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
