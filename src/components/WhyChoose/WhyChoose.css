@@ -1,0 +1,94 @@
+.why-choose-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5rem 2rem;
+    background-color: #e7e8e6;
+    overflow: hidden;
+}
+
+.why-choose-container h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.why-choose-content{
+    text-align: center;
+}
+
+.why-choose-content h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.why-choose-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.why-choose-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.why-choose-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+.why-choose-features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.why-choose-feature{
+    width: 400px;
+    height: 400px;
+    background-color: #131C05;
+    color: white;
+    position: relative;
+}
+
+.why-choose-feature p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    letter-spacing: 0.1rem;
+}
+
+
+.join-farmer-btn{
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #344D0C;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Inter",serif;
+}
+
+
+@media (max-width: 768px){
+    .why-choose-features{
+        grid-template-columns: 1fr;
+    }
+    .why-choose-feature{
+        width: 100%;
+    }
+}
