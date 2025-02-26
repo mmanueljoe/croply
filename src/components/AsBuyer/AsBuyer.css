@@ -85,10 +85,10 @@
 
 
 @media (max-width: 768px){
-    .why-choose-features{
+    .buyer-features{
         grid-template-columns: 1fr;
     }
-    .why-choose-feature{
+    .buyer-feature{
         width: 100%;
     }
 }

@@ -30,7 +30,7 @@ const AsBuyer = () => {
                 </div>
             </div>
             <button className="buyer-btn">
-                Join as a Farmer
+                Join as a Buyer
             </button>
         </div>
     </>
