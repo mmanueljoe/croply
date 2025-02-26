@@ -14,19 +14,20 @@ const AsBuyer = () => {
             </div>
             <div className="buyer-features">
                 <div className="buyer-feature">
-                    <p>Real-Time Market Information</p>
+                    <p>Direct Farmer
+                    Connections</p>
                 </div>
                 <div className="buyer-feature">
-                    <p>Agricultural Insights
-                    At Your Fingertips</p>
+                    <p>Real-Time Market
+                    Informations</p>
                 </div>
                 <div className="buyer-feature">
-                    <p>A Thriving
-                    Community</p>
+                    <p>Wide Variety
+                    Of Crops</p>
                 </div>
                 <div className="buyer-feature">
-                    <p>Resource
-                    Directory</p>
+                    <p>Streamlined 
+                    Transactions</p>
                 </div>
             </div>
             <button className="buyer-btn">
