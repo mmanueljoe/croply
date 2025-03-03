@@ -5,6 +5,8 @@
 
 ### Empowering Farmers with Market Access & Agricultural Insights  
 
+## Added a signup page
+
 ## 📌 Overview  
 Croply is a frontend-only React application designed to help farmers in Ho access fair markets and critical agricultural information. It aims to improve market efficiency, reduce post-harvest losses, and enhance farmers' decision-making with real-time insights.  
 
