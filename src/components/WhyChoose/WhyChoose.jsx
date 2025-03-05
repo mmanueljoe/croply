@@ -16,21 +16,37 @@ const WhyChoose = () => {
             </div>
             <div className="why-choose-features">
                 <div className="why-choose-feature"
-                data-description="Real-Time Market Information">
+                data-description="Stay ahead with up-to-date market 
+prices, buyer and seller details, and 
+trends that matter. Make informed 
+decisions and maximize your profits.">
                     <p>Real-Time Market Information</p>
                 </div>
             
                 <div className="why-choose-feature"
-                data-description="Agricultural Insights At Your Fingertips">
+                data-description="Access weather forecasts, crop 
+advisories, and the latest research 
+to optimize your farming practices. 
+Knowledge is power, and we’re here 
+to keep you informed.">
                     <p>Agricultural Insights At Your Fingertips</p>
                 </div>
                 <div className="why-choose-feature"
-                data-description="A Thriving Community">
+                data-description="Join a network of farmers and 
+buyers who share your passion 
+for agriculture. Exchange ideas, 
+share experiences, and learn 
+from each other in our vibrant 
+community forum.">
                     <p>A Thriving
                     Community</p>
                 </div>
                 <div className="why-choose-feature"
-                data-description="Resource Directory">
+                data-description="Find everything you need in one 
+place—agricultural inputs, 
+equipment, financial services, and 
+more. Croply connects you to the 
+resources that drive success.">
                     <p>Resource
                     Directory</p>
                 </div>
