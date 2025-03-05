@@ -10,22 +10,26 @@ const AsBuyer = () => {
                 <p>Source Fresh, Quality Crops with Ease</p>
             </div>
             <div className="buyer-img">
-                <img src={assets.whyImg} alt="" />
+                <img src={assets.veg} alt="" />
             </div>
             <div className="buyer-features">
-                <div className="buyer-feature">
+                <div className="buyer-feature"
+                data-description="">
                     <p>Direct Farmer
                     Connections</p>
                 </div>
-                <div className="buyer-feature">
+                <div className="buyer-feature"
+                data-description="">
                     <p>Real-Time Market
                     Informations</p>
                 </div>
-                <div className="buyer-feature">
+                <div className="buyer-feature"
+                data-description="">
                     <p>Wide Variety
                     Of Crops</p>
                 </div>
-                <div className="buyer-feature">
+                <div className="buyer-feature"
+                data-description="">
                     <p>Streamlined 
                     Transactions</p>
                 </div>
