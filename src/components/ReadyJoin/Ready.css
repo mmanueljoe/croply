@@ -1,0 +1,46 @@
+.ready-container{
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready-container h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ready-content{
+    width: 66%;
+    text-align: center;
+}
+
+.ready-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.ready-content .ready-content-p2{
+    font-weight: 500;
+}
+
+.ready-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready-farmer-btn, .ready-buyer-btn{
+    padding: 0.8rem 3rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #344D0C;
+    color: #fff;
+}

@@ -1,0 +1,13 @@
+.blog-container{
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.blog-container h1{
+    text-align: center;
+}
+
+.blog-content img{
+    width: 100%;
+    height: auto;
+}

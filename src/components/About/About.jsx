@@ -11,7 +11,10 @@ const About = () => {
                 <div className='about-content'>
                     <h2>What is Croply?</h2>
                     <p>
-                        Croply connects farmers and buyers with real-time market insights and a thriving community. Buy, sell, and trade smarter—seamlessly
+                    Croply is a digital platform designed to empower farmers and buyers in Ho and beyond. We provide real-time market 
+information, agricultural insights, and a vibrant community to help you succeed. Whether you’re a farmer 
+looking to sell your produce or a buyer seeking quality crops, Croply is your one-stop solution 
+for smarter farming and seamless trading.
                     </p>
                 </div>
                 <div className='about-img'>

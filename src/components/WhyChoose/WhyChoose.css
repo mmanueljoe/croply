@@ -1,71 +1,130 @@
-.why-choose-container{
+/* WhyChoose.css */
+.why-choose-container {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 5rem 2rem;
+    gap: 2rem;
+    padding: 5rem 0;
     background-color: #e7e8e6;
     overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 0 2rem;
+}
+
+.why-choose-feature {
+    position: relative;
+    height: 360px;
+    background-color: #131C05;
+    color: white;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Title styling */
+.why-choose-feature p {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 2;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* White overlay card */
+.why-choose-feature::after {
+    content: attr(data-description);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 60%;
+    background: white;
+    color: #131C05;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    pointer-events: none;
+}
+
+.why-choose-feature:hover::after {
+    opacity: 1;
+}
+
+.why-choose-feature:hover p {
+    color: #131C05;
+    transform: translateY(-20px);
+}
+
+
+.why-choose-feature p {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    z-index: 2;
+    transition: all 1s ease;
+    margin: 0;
+    width: 100%; /* Ensure text doesn't overflow */
+    padding: 0 1rem; /* Add breathing room */
 }
 
 .why-choose-container h1{
     text-align: center;
     font-weight: 800;
     font-size: 2rem;
+    margin-bottom: 0.8rem;
 }
 
-.why-choose-content{
-    text-align: center;
-}
 
 .why-choose-content h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
+    margin-bottom: 0.7rem;
+    text-align: center;
 }
 
 
 .why-choose-content p{
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .why-choose-img{
-    max-width: 100%;
-    height: auto;
+    /* max-width: 1200px; */
+    width: 100%;
 }
 
 .why-choose-img img{
     width: 100%;
-    height: auto;
 }
 
 
-.why-choose-features{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.why-choose-feature{
-    width: 400px;
-    height: 400px;
-    background-color: #131C05;
-    color: white;
-    position: relative;
-}
-
-.why-choose-feature p{
-    font-size: 1.5rem;
-    font-weight: 200;
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    letter-spacing: 0.1rem;
-}
 
 
 .join-farmer-btn{
@@ -84,11 +143,43 @@
 }
 
 
-@media (max-width: 768px){
-    .why-choose-features{
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .why-choose-feature {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose-features {
         grid-template-columns: 1fr;
     }
-    .why-choose-feature{
-        width: 100%;
+    
+    .why-choose-feature {
+        height: 280px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .why-choose-feature::after {
+        width: 85%;
+        height: 65%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-feature {
+        height: 250px;
+        padding: 1.5rem;
+    }
+    
+    .why-choose-feature p {
+        font-size: 1.2rem;
+    }
+    
+    .why-choose-feature::after {
+        font-size: 0.9rem;
+        padding: 1rem;
     }
 }
