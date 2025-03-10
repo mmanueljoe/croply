@@ -1,0 +1,70 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #000;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .role-button {
+    padding: 6rem 2rem;
+    border-radius: 8px;
+    border-width: 0.5px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .role-button.farmer {
+    background: #fff;
+    color: #000;
+  }
+  
+  .role-button.buyer {
+    /* background: #2b400a; */
+    background: #fff;
+    color: #000;
+  }
+  
+  .role-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    background: #2b400a;
+    color: #fff;
+  }

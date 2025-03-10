@@ -1,0 +1,155 @@
+/* FarmerSignUp.css */
+.farmer-signup-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* Left Column with Image Overlay */
+.fam-left-col {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.fam-left-col::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    z-index: 1;
+}
+
+.fam-left-col img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fam-left-col h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    font-family: "Italiana", serif;
+}
+
+/* Right Column Styling */
+.fam-right-col {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+.fam-right-col h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.farmer-btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    /* align-items: flex-end; */
+}
+
+.farmer-btns button {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    border-width: 0.5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.farmer-btns button:hover {
+    opacity: 0.9;
+}
+
+.fam-right-col .or{
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+/* Form Styling */
+.fam-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fam-form input {
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 0.9rem;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.fam-form input:focus {
+    outline: none;
+    border-color: #344D0C;
+}
+
+.fam-form input[type="submit"] {
+    margin-top: 2rem;
+    background: #344D0C;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Link Styling */
+.fam-right-col a {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.fam-right-col a span {
+    color: #344D0C;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .farmer-signup-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fam-left-col {
+        height: 40vh;
+    }
+
+    .fam-left-col h1 {
+        font-size: 2.5rem;
+    }
+
+    .fam-right-col {
+        padding: 2rem 1rem;
+    }
+}

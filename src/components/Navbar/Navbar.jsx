@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
+import SignupModal from "../SignupModal/SignupModal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <header>
       <div className="nav-container">
@@ -26,11 +29,14 @@ const Navbar = () => {
             <li><Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
-          
         </nav>
-        <button className="sign-up-btn">
+        <button className="sign-up-btn" onClick={() => setIsModalOpen(true)}>
             Sign up
         </button>
+        <SignupModal 
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
       </div>
     </header>
   );

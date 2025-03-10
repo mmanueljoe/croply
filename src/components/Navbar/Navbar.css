@@ -3,9 +3,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     background: white;
     gap: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* LOGO */
@@ -35,13 +36,18 @@
 /* Styling Links */
 .nav-links a {
     color: #000;
-    font-size: 1.1rem;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 500;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.4s ease-in-out;
 }
 
 .nav-links a:hover {
+    color: #6a8f3c;
+    
+}
+
+.nav-links a.active{
     color: #6a8f3c;
 }
 
@@ -61,11 +67,12 @@
 }
 
 .sign-up-btn{
-    padding: 0.4rem 0.4rem;
-    border-radius: 5px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
     border-style: none;
     background-color: #344D0C;
     color: #fff;
+    font-size: 0.9rem;
 }
 
 /* MOBILE NAVIGATION */

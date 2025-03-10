@@ -7,14 +7,13 @@ const FamerSignUp = () => {
     <>
         <div className="farmer-signup-container">
             <div className="fam-left-col">
+                <h1>Croply</h1>
                 <img src={assets.man} alt="" />
             </div>
 
             <div className="fam-right-col">
-                <div>
-                    <h1>Croply</h1>
-                    <p>Create Account</p>
-                    <div>
+                    <h3>Create Account</h3>
+                    <div className="farmer-btns">
                         <button>
                             Sign up with Google
                         </button>
@@ -22,17 +21,17 @@ const FamerSignUp = () => {
                             Sign up with Facebook
                         </button>
                     </div>
-                </div>
-                <p>-OR-</p>
-                <form action="">
+                <p className="or">-OR-</p>
+                <form action="" className="fam-form">
                     <input type="text" placeholder="Full Name"/>
                     <input type="tel" placeholder="Phone Number"/>
                     <input type="text" placeholder="Password"/>
-                    <input type="submit" />
+                    <input type="submit" value='Create Account'/>
                 </form>
                 <Link>
                     Already have an account? <span>Login</span>
                 </Link>
+
             </div>
 
         </div>

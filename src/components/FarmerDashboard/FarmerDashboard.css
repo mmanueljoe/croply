@@ -1,0 +1,54 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .user-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  
+  .main-nav {
+    background: #344D0C;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .main-nav a.active {
+    font-weight: 700;
+    background: #456823;
+  }
+  
