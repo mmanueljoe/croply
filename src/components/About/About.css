@@ -1,121 +1,121 @@
-.about-container{
-    display: grid;
-    grid-template-columns: 1fr;
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 3rem 2rem;
-    gap: 1rem;
+    text-align: center;
+    overflow: hidden;
 }
 
-.about-container h1{
-    text-align: center;
+.about-container h1 {
     font-size: 2rem;
     font-weight: 800;
     color: var(--primary-color);
-    padding-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.about-container h2{
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding-bottom: 0.5rem;
-    color: var(--primary-color);
-}
-
-.about-content{
-    text-align: center;
-}
-
-.about-content p{
-    font-size: 0.9rem;
-    color: var(--text-color);
-    width: 65%;
+.about-content {
+    /* max-width: 700px; */
     margin: 0 auto;
 }
 
-.about-img{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.about-container h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
-.about-img-man{
-    max-width: 400px;
-    width: 400px;
-    border-radius: 10px
+.about-content p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 85%;
+    text-align: center;
+    line-height: 1.6;
 }
 
-.about-img-lady{
-    width: 400px;
-    border-radius: 10px
+/* Ensuring the bottom text lines are not longer than the top */
+.about-content p::before {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-top: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.about-img-lady img{
+.about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+.about-img-man, .about-img-lady {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-img-man img, .about-img-lady img {
     width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-
-.about-img-man img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+.arrow {
+    width: 220px; /* Bigger size */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Adjust rotation */
+    z-index: -1; /* Ensure it's above other elements */
 }
 
+.arrow img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-@media screen and (max-width: 768px){
-    .about-img{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        justify-items: center;
-    }
-
-    .about-img-man{
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
-        border-radius: 10px
-    }
-    
-    .about-img-lady{
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
-        border-radius: 10px
-    }
-
-    .about-content p{
-        font-size: 1.2rem;
-        color: var(--text-color);
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-content p {
         width: 90%;
-        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+    .about-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow {
+        width: 80px; /* Adjust arrow size */
+        transform: rotate(90deg) translateY(-20px); /* Adjust rotation and position */
     }
 }
 
-@media screen and (max-width: 500px){
-    .about-img{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        justify-items: center;
-    }
-
-    .about-img-man{
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px
-    }
-    
-    .about-img-lady{
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px
-    }
-
-    .about-content p{
-        font-size: 1.2rem;
-        color: var(--text-color);
+@media screen and (max-width: 500px) {
+    .about-content p {
         width: 100%;
-        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+    .about-img-man, .about-img-lady {
+        width: 300px;
+    }
+
+    .arrow {
+        width: 60px; /* Smaller arrow */
+        left: 50%;
+        top: 55%;
     }
 }

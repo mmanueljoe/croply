@@ -20,6 +20,14 @@
     padding: 0 2rem;
 }
 
+
+.why-choose-container h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
 .why-choose-feature {
     position: relative;
     height: 360px;
@@ -38,9 +46,9 @@
 /* Title styling */
 .why-choose-feature p {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     z-index: 2;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     margin: 0;
     padding: 0 1rem;
     text-align: center;
@@ -59,7 +67,7 @@
     padding: 2rem;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all 0.8s ease;
+    transition: all 0.8s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,28 +83,23 @@
 
 .why-choose-feature:hover p {
     color: #131C05;
-    transform: translateY(-20px);
+    transform: translateY(-70px);
 }
 
 
 .why-choose-feature p {
     position: relative;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: 0.1rem;
     text-align: center;
     z-index: 2;
-    transition: all 0.8s ease;
+    transition: all 0.6s ease-in-out;
     margin: 0;
     width: 100%; /* Ensure text doesn't overflow */
     padding: 0 1rem; /* Add breathing room */
 }
 
-.why-choose-container h1{
-    text-align: center;
-    font-weight: 800;
-    font-size: 2rem;
-}
 
 
 .why-choose-content h2{
@@ -124,8 +127,6 @@
 }
 
 
-
-
 .join-farmer-btn{
     display: block;
     margin: 2rem auto;
@@ -137,10 +138,14 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.6s ease-in-out;
     font-family: "Inter",serif;
 }
 
+.join-farmer-btn:hover{
+    background: #131C05;
+    transform: translate(-3px);
+}
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {

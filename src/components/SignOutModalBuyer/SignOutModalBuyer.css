@@ -1,0 +1,93 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Container (Wider, Not Too Tall) */
+.modal-container {
+  width: 55%;
+  background: white;
+  box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Close Icon (X Button) */
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 15px;
+  color: gray;
+  cursor: pointer;
+}
+
+/* Warning Icon */
+.warning-icon {
+  width: 50px;
+  color: red;
+  margin: 10px auto;
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  margin: 10px 0;
+}
+
+/* Modal Text */
+.modal-text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+/* Yes Button */
+.yes-btn {
+  padding: 0.5rem 3rem; 
+  background: white;
+  border: 2px solid #033B77;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  cursor: pointer;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  padding: 0.5rem 3rem; 
+  background: #033B77;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  cursor: pointer;
+}

@@ -21,11 +21,13 @@ for smarter farming and seamless trading.
                     <div className='about-img-man'>
                         <img src={assets.man} alt="" />
                     </div>
-                    <div className='arrow'>
 
+                    <div className='arrow'>
+                        <img src={assets.arrow} alt="" />
                     </div>
+               
                     <div className='about-img-lady'>
-                        <img src={assets.lady} alt="" />
+                        <img src={assets.woman} alt="" />
                     </div>
                 </div>
             </div>

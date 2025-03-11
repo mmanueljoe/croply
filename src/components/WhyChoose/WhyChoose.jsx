@@ -1,8 +1,10 @@
 import assets from "../../assets";
 import "./WhyChoose.css";
+import { useNavigate } from "react-router-dom";
 
 
 const WhyChoose = () => {
+    const navigateFamSign = useNavigate();
   return (
     <>
         <div className="why-choose-container">
@@ -51,7 +53,7 @@ resources that drive success.">
                     Directory</p>
                 </div>
             </div>
-            <button className="join-farmer-btn">
+            <button className="join-farmer-btn" onClick={() => {navigateFamSign('sign/farmer')}}>
                 Join as a Farmer
             </button>
         </div>

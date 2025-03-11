@@ -1,35 +1,44 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, Link } from 'react-router-dom';
 import './FarmerDashboard.css';
-import assets from '../../assets';
+import { FaUser } from 'react-icons/fa';
 
 const FarmerDashboard = () => {
   return (
     <>
-        <div className="dashboard-container">
-      {/* Top Navigation Bar */}
-      <nav className="top-nav">
+      <div className="dashboard-container">
+      {/* Top Navbar */}
+      <nav className="dashboard-nav">
         <div className="nav-left">
-          {/* <img src={assets.logo} alt="Croply Logo" className="logo" /> */}
-          <span>Croply</span>
+          <Link to='' className='logo-link'>
+            <span className="logo">Croply</span>
+          </Link>
         </div>
         <div className="nav-right">
-          <img src={assets.userIcon} alt="User Profile" className="user-icon" />
+          <FaUser className="profile-icon" />
         </div>
       </nav>
 
-      {/* Main Navigation Bar */}
-      <nav className="main-nav">
-        <NavLink to="/farmer/home" end>Home</NavLink>
-        <NavLink to="/farmer/listings">Listings</NavLink>
-        <NavLink to="/farmer/market-prices">Market Prices</NavLink>
-        <NavLink to="/farmer/resources">Resources</NavLink>
-        <NavLink to="/farmer/community">Community</NavLink>
-        <NavLink to="/logout">Sign Out</NavLink>
-      </nav>
+      {/* Sidebar */}
+      <aside className="dashboard-sidebar">
+        <nav className="sidebar-nav">
+          <ul>
+            <li>
+              <NavLink to="" end className={({ isActive }) => isActive ? 'active' : ''}>
+                Home
+              </NavLink>
+            </li>
+            <li><NavLink to="listings">Listings</NavLink></li>
+            <li><NavLink to="market-prices">Market Prices</NavLink></li>
+            <li><NavLink to="resources">Resources</NavLink></li>
+            <li><NavLink to="community">Community</NavLink></li>
+            <li><button className="sign-out">Sign Out</button></li>
+          </ul>
+        </nav>
+      </aside>
 
-      {/* Dashboard Content */}
-      <main className="dashboard-content">
-        <Outlet /> {/* This will render nested routes */}
+      {/* Main Content */}
+      <main className="dashboard-main">
+        <Outlet /> {/* For nested routes */}
       </main>
     </div>
     </>

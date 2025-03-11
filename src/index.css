@@ -5,11 +5,25 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body{
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   background-color: #f0f0f0;
+  animation: appear linear; 
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+  
 }
 

@@ -1,0 +1,145 @@
+.buyer-login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* Left column styling */
+.login-left {
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2A4D9B; /* Blue accent */
+}
+
+.login-left p {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.passwd-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.passwd-input input {
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2.5rem; /* Space for icon */
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 0.9rem;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.passwd-input input:focus {
+    outline: none;
+    border-color: #2A4D9B; /* Blue accent */
+}
+
+/* Toggle password eye icon */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    bottom: 12px; /* Align it properly */
+    cursor: pointer;
+    color: #666; /* Matches input text */
+}
+
+/* Forgot password link */
+.forgot-password {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+/* Login button */
+.login-form input[type="submit"] {
+    margin-top: 1rem;
+    background: #2A4D9B;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Link Styling */
+.login-left .already {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.login-left .already span {
+    color: #2A4D9B;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Right column styling */
+.login-right {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.login-right h1 {
+    z-index: 2;
+    color: #fff;
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .buyer-login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-left {
+        height: 60vh;
+    }
+}

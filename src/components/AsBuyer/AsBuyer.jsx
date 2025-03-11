@@ -1,7 +1,10 @@
 import "./AsBuyer.css";
 import assets from "../../assets";
+import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
 
 const AsBuyer = () => {
+    const navigateSign = useNavigate();
     return (
         <>
             <div className="as-buyer-container">
@@ -41,7 +44,7 @@ const AsBuyer = () => {
                             Transactions</p>
                     </div>
                 </div>
-                <button className="buyer-btn">
+                <button className="buyer-btn" onClick={() => {navigateSign('sign/buyer')}}>
                     Join as a Buyer
                 </button>
             </div>

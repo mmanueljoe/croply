@@ -1,47 +1,53 @@
 import { NavLink } from "react-router-dom";
-import assets from "../../assets";
 import { services } from "../../data/services";
+// import { FaLeaf } from "react-icons/fa";
+import "./FarmerHome.css";
+import assets from "../../assets";
 
 const FarmerHome = () => {
   return (
-    <>
-        <div className="home-content">
+    <div className="dashboard-home">
       {/* Header Section */}
-      <div className="home-header">
+      <div className="dashboard-header">
         <div>
-          <h1>Hello, Theresa</h1>
+          <h1>Hello, John Doe</h1>
           <p>Welcome to Croply Platform</p>
         </div>
-        <NavLink to="/farmer/ai" className="ai-logo">
-          <img src={assets.aiLogo} alt="Croply AI" />
+        <NavLink to="/croply-ai" className="ai-logo">
+          {/* <FaLeaf size={40} /> */}
+          <img src={assets.ai_logo} alt="" />
+          <p>CroplyAI</p>
         </NavLink>
       </div>
 
-      {/* Stats Cards */}
+      {/* Stats Grid */}
+      <div className="stat-container">
       <div className="stats-grid">
-        <div className="stat-card">
-          <h3>Active Listings</h3>
+        <div className="stat-box">
+          <h3>Number of Active Listings</h3>
           <p>12</p>
         </div>
-        <div className="stat-card">
+        <div className="stat-box">
           <h3>Total Sales</h3>
-          <p>₦2,450,000</p>
+          <p>$4,560</p>
         </div>
-        <div className="stat-card">
+        <div className="stat-box">
           <h3>Buyer Inquiries</h3>
           <p>8</p>
         </div>
-        <div className="stat-card">
+        <div className="stat-box">
           <h3>Weather</h3>
-          <p>24°C ☀️</p>
+          <p>24°C Sunny</p>
         </div>
       </div>
-
-      {/* Analytics Section */}
-      <div className="analytics-box">
-        <h2>Monthly Sales Analytics</h2>
-        {/* Add chart component here */}
       </div>
+     
+
+      {/* Additional Stats */}
+      {/* <div className="additional-stats">
+        <h3>Monthly Performance</h3>
+        
+      </div> */}
 
       {/* Services Section */}
       <div className="services-section">
@@ -49,7 +55,11 @@ const FarmerHome = () => {
         <div className="services-grid">
           {services.map((service) => (
             <div key={service.id} className="service-card">
-              <img src={service.image} alt={service.title} />
+              <img 
+                src={service.image} // Access asset through imported object
+                alt={service.title}
+                className="service-image"
+              />
               <div className="service-overlay">
                 <h3>{service.title}</h3>
               </div>
@@ -58,8 +68,7 @@ const FarmerHome = () => {
         </div>
       </div>
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default FarmerHome
+export default FarmerHome;

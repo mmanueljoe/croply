@@ -1,6 +1,9 @@
 import "./Ready.css";
+import { useNavigate } from "react-router-dom";
 
 const Ready = () => {
+    const navigateToFamSignup = useNavigate();
+    const navigateToBuyerSignup = useNavigate();
     return (
         <>
             <div className="ready-container">
@@ -16,8 +19,8 @@ const Ready = () => {
                 </div>
                 
                 <div className="ready-btns">
-                    <button className="ready-farmer-btn">Join as a Farmer</button>
-                    <button className="ready-buyer-btn">Join as a Buyer</button>
+                    <button className="ready-farmer-btn" onClick={() => {navigateToFamSignup('/sign/farmer')}}>Join as a Farmer</button>
+                    <button className="ready-buyer-btn" onClick={() => {navigateToBuyerSignup('/sign/buyer')}}>Join as a Buyer</button>
                 </div>
             </div>
 
