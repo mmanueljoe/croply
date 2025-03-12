@@ -17,19 +17,34 @@ const Navbar = () => {
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
+          <span className={isOpen ? "bar open" : "bar"}></span>
+          <span className={isOpen ? "bar open" : "bar"}></span>
+          <span className={isOpen ? "bar open" : "bar"}></span>
         </div>
         
         {/* Nav Links */}
         <nav className={isOpen ? "nav-links open" : "nav-links"}>
-          <ul>
-            <li><Link to="/" onClick={() => setIsOpen(false)} className="active">Home</Link></li>
-            <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-            <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
-            <li><Link to="/marketplace" onClick={() => setIsOpen(false)}>Marketplace</Link></li>
-            <li><Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
-            <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
-          </ul>
-        </nav>
+  <ul>
+    <li><Link to="/" onClick={() => setIsOpen(false)} className="active">Home</Link></li>
+    <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
+    
+    {/* Services Dropdown */}
+    <li className="dropdown">
+      <Link to="/services" onClick={() => setIsOpen(false)}>
+        Services
+      </Link>
+      <ul className="dropdown-content">
+        <li><Link to="/farmer" onClick={() => setIsOpen(false)}>Farmer</Link></li>
+        <li><Link to="/buyer" onClick={() => setIsOpen(false)}>Buyer</Link></li>
+      </ul>
+    </li>
+    
+    <li><Link to="/marketplace" onClick={() => setIsOpen(false)}>Marketplace</Link></li>
+    <li><Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
+    <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+  </ul>
+</nav>
+
         <button className="sign-up-btn" onClick={() => setIsModalOpen(true)}>
             Sign up
         </button>
