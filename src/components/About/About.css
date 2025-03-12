@@ -98,8 +98,18 @@
     }
 
     .arrow {
-        width: 80px; /* Adjust arrow size */
-        transform: rotate(90deg) translateY(-20px); /* Adjust rotation and position */
+        width: 100px; /* Bigger size */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Adjust rotation */
+        z-index: -1; /* Ensure it's above other elements */
+    }
+    
+    .arrow img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
 
@@ -113,9 +123,19 @@
         width: 300px;
     }
 
+   
     .arrow {
-        width: 60px; /* Smaller arrow */
+        width: 220px; /* Bigger size */
+        position: absolute;
         left: 50%;
-        top: 55%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Adjust rotation */
+        z-index: -1; /* Ensure it's above other elements */
+    }
+    
+    .arrow img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }

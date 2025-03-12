@@ -140,7 +140,7 @@ footer h2 {
 
 /* When button is clicked */
 .subscribe-container.active .subscribe-btn {
-    transform: translateX(10%); /* Moves to the right */
+    transform: translateX(0%); /* Moves to the right */
     background-color: #344D0C; /* Changes to green */
     color: white;
 }
