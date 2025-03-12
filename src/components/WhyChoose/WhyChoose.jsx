@@ -2,7 +2,6 @@ import assets from "../../assets";
 import "./WhyChoose.css";
 import { useNavigate } from "react-router-dom";
 
-
 const WhyChoose = () => {
     const navigateFamSign = useNavigate();
   return (
@@ -24,7 +23,6 @@ trends that matter. Make informed
 decisions and maximize your profits.">
                     <p>Real-Time Market Information</p>
                 </div>
-            
                 <div className="why-choose-feature"
                 data-description="Access weather forecasts, crop 
 advisories, and the latest research 
@@ -40,8 +38,7 @@ for agriculture. Exchange ideas,
 share experiences, and learn 
 from each other in our vibrant 
 community forum.">
-                    <p>A Thriving
-                    Community</p>
+                    <p>A Thriving Community</p>
                 </div>
                 <div className="why-choose-feature"
                 data-description="Find everything you need in one 
@@ -49,8 +46,7 @@ place—agricultural inputs,
 equipment, financial services, and 
 more. Croply connects you to the 
 resources that drive success.">
-                    <p>Resource
-                    Directory</p>
+                    <p>Resource Directory</p>
                 </div>
             </div>
             <button className="join-farmer-btn" onClick={() => {navigateFamSign('sign/farmer')}}>
@@ -61,4 +57,4 @@ resources that drive success.">
   )
 }
 
-export default WhyChoose
+export default WhyChoose;

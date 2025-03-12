@@ -1,42 +1,42 @@
 /* Main container */
 .how-it-works-container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 1rem;
     text-align: center;
+    max-width: 1200px;
 }
 
 /* Title */
 .how-it-works-container h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #000;
 }
 
-
-
 /* Content container */
 .how-it-works-content {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Always two columns */
+    gap: 2rem;
     justify-content: center;
-    gap: 2rem 1rem;
 }
 
 /* Individual items */
 .how-it-works-item {
-    max-width: 400px;
     padding: 2rem;
     background-color: #131C05;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%; /* Equal size */
 }
 
-.how-it-works-item:hover{
-    transform: translateX(-5px);
+.how-it-works-item:hover {
     transform: scale(1.03);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Text container */
@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 /* Number styling */
@@ -52,27 +51,77 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: #f9f9f9;
     color: #131C05;
-    font-size: 0.7rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 /* Step title */
 .how-it-works-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
+    font-size: 2rem;
     color: #f9f9f9;
+    margin-bottom: 0.5rem;
 }
 
 /* Step description */
 .how-it-works-text p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     color: #f9f9f9;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+/* ----- Responsive Design (Standard Screen Sizes) ----- */
+
+/* Laptops & Tablets: Always 2 columns */
+@media (max-width: 1024px) {
+    .how-it-works-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets & Smaller Screens: Switch to 1 column */
+@media (max-width: 768px) {
+    .how-it-works-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile: Adjust text & spacing */
+@media (max-width: 425px) {
+    .how-it-works-container {
+        padding: 2rem 1rem;
+    }
+
+    .how-it-works-container h1 {
+        font-size: 2rem;
+    }
+
+    .how-it-works-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .how-it-works-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Smaller Mobile Screens (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .how-it-works-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .how-it-works-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .how-it-works-text p {
+        font-size: 0.9rem;
+    }
 }

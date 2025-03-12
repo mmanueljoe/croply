@@ -8,6 +8,7 @@
     overflow: hidden;
     margin: 0 auto;
     justify-items: center;
+    width: 100%;
 }
 
 .as-buyer-container h2 {
@@ -16,8 +17,6 @@
     font-size: 2rem;
     margin-bottom: 0.8rem;
 }
-
-
 
 .buyer-content {
     width: 100%;
@@ -28,17 +27,15 @@
     text-align: center;
 }
 
-
 .buyer-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: 2rem auto 0;
     padding: 0 2rem;
 }
-
 
 .buyer-feature {
     position: relative;
@@ -53,9 +50,10 @@
     text-align: center;
     border-radius: 8px;
     transition: all 0.8s ease;
+    width: 100%;
 }
 
-/* title styling */
+/* Title styling */
 .buyer-feature p {
     position: relative;
     font-size: 1.5rem;
@@ -65,8 +63,8 @@
     z-index: 2;
     transition: all 0.6s ease-in-out;
     margin: 0;
-    width: 100%; /* Ensure text doesn't overflow */
-    padding: 0 1rem; /* Add breathing room */
+    width: 100%;
+    padding: 0 1rem;
 }
 
 /* White overlay card */
@@ -99,14 +97,10 @@
 .buyer-feature:hover p {
     color: #131C05;
     transform: translateY(-70px);
-    /* z-index: 2; */
 }
-
-
 
 .buyer-img {
     width: 100%;
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -114,10 +108,6 @@
     width: 100%;
     height: auto;
 }
-
-
-
-
 
 .buyer-btn {
     display: block;
@@ -139,19 +129,20 @@
     transform: translate(-3px);
 }
 
+/* Ensure two columns are maintained until 480px width */
 @media (max-width: 1024px) {
     .buyer-feature {
-        height: 300px;
+        height: 320px;
     }
 }
 
 @media (max-width: 768px) {
     .buyer-features {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .buyer-feature {
-        height: 280px;
+        height: 300px;
         max-width: 500px;
         margin: 0 auto;
     }
@@ -164,17 +155,22 @@
 }
 
 @media (max-width: 480px) {
+    .buyer-features {
+        grid-template-columns: 1fr;
+    }
+    
     .buyer-feature {
-        height: 250px;
+        height: 280px;
         padding: 1.5rem;
+        max-width: 100%;
     }
     
     .buyer-feature p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     
     .buyer-feature::after {
-        font-size: 0.9rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding: 1.2rem;
     }
 }
