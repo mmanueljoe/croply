@@ -44,12 +44,15 @@
 
 .nav-links a:hover {
     color: #6a8f3c;
-    
+    box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .nav-links a.active{
     color: #6a8f3c;
 }
+
 
 /* HAMBURGER MENU */
 .hamburger {
@@ -77,8 +80,15 @@
 
 /* MOBILE NAVIGATION */
 @media (max-width: 768px) {
+
     .hamburger {
         display: flex;
+    }
+
+    .nav-container {
+        background-color: #fff;  /* This is where the background color is applied */
+        z-index: 999;
+    
     }
 
     .nav-links {
@@ -104,8 +114,13 @@
 
     .nav-links a {
         font-size: 1.2rem;
+        box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+        /* background-color: #ffff; */
+        padding: 10px;
     }
+
 }
+
 
 @media (max-width: 500px) {
     .nav-container {

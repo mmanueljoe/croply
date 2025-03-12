@@ -15,7 +15,6 @@
 }
 
 .about-content {
-    /* max-width: 700px; */
     margin: 0 auto;
 }
 
@@ -52,12 +51,12 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    gap: 6rem;
+    gap: 11rem;
     margin-top: 2rem;
 }
 
 .about-img-man, .about-img-lady {
-    width: 450px;
+    width: 500px;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
@@ -70,19 +69,27 @@
     border-radius: 10px;
 }
 
+.about-img-man img{
+    position: relative;
+    left: 2rem;
+}
+
 .arrow {
-    width: 220px; /* Bigger size */
+    width: 795px; /* Bigger size */
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) rotate(-10deg); /* Adjust rotation */
-    z-index: -1; /* Ensure it's above other elements */
+    transform: translate(-50%, -50%) rotate(-10deg); 
+    z-index: -1;
 }
 
 .arrow img {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    left: -5.88rem;
+    top: 4.7rem;
 }
 
 /* Responsive Styles */
