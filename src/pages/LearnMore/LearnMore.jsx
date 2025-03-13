@@ -6,7 +6,7 @@ import React from 'react';
 function LearnMorePage() {
   return (
     <div class="main">
-      <div className="texts">
+      <div className="text-card">
         <p className="start">
           Croply is a digital platform designed to connect famers and buyers, providing tools and resources to improve agricultural productivity ,
           <br />market access, and profitability. Below is a detailed overview of Croply, its features, benefits, and how it works:
