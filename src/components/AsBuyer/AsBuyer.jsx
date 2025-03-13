@@ -52,4 +52,4 @@ const AsBuyer = () => {
     )
 }
 
-export default AsBuyer
+export default AsBuyer;

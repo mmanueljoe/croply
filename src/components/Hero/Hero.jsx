@@ -17,7 +17,8 @@ is designed to empower farmers in Ho and beyond with the tools, information, and
 resources they need to thrive in today’s agricultural marketplace. Whether you’re a farmer 
 looking to sell your produce or a buyer seeking quality crops, Croply is your one-stop solution 
 for smarter farming and seamless trading.</p>
-          <button>Learn More</button>
+<button onClick={() => window.location.href = '/learn-more'}>Learn More</button>
+
         </div>
       </div>
     </>

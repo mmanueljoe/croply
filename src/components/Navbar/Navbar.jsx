@@ -17,9 +17,7 @@ const Navbar = () => {
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
-          <span className={isOpen ? "bar open" : "bar"}></span>
-          <span className={isOpen ? "bar open" : "bar"}></span>
-          <span className={isOpen ? "bar open" : "bar"}></span>
+
         </div>
         
         {/* Nav Links */}

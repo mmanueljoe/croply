@@ -8,6 +8,14 @@ import FarmerDashboard from './components/FarmerDashboard/FarmerDashboard';
 import BuyerSignUp from './pages/BuyerSignUp/BuyerSignUp';
 import BuyerLogin from './pages/BuyerLogin/BuyerLogin';
 import BuyerDasboard from './components/BuyerDashboard/BuyerDasboard';
+import MyComponent from './components/MyComponent/Mycomponent';
+import LearnMorePage from './pages/LearnMore/LearnMore';
+
+
+
+
+
+
 
 function App() {
   return (
@@ -16,6 +24,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<h1>About</h1>} />
+
+            {/* LEARN MORE/BUTTON */}
+            <Route path="./components/MyComponent/MyComponent.jsx" element={<MyComponent />} /> {/* MyComponent on the homepage */}
+            <Route path="/learn-more" component={LearnMorePage} />
+            
 
             {/* farmer signup/login */}
             <Route path='/sign/farmer' element={<FamerSignUp />} />
