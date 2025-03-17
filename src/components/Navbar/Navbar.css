@@ -1,159 +1,218 @@
 /* General Navbar Styling */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    background: white;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 10;
+.navbar{
+   padding: 2rem 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 2rem;
+   /* box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); */
 }
 
-.nav-container h1 {
-    font-family: "Italiana", serif;
-    color: #344D0C;
-    font-size: 2rem;
+.navbar .logo{
+    text-decoration: none;
+    font-family: "Italiana", sans-serif;
+    font-size: 2.5rem;
     font-weight: 100;
-    text-align: center;
-    flex-grow: 1;
+    color: #344D0C;
+    margin-right: auto;
 }
 
 /* Nav Links for Desktop */
-.nav-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links ul {
+.nav-links{
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin: 0;
-    padding: 0;
+    position: relative;
 }
 
-.nav-links a {
-    color: #000;
-    font-size: 0.9rem;
-    font-weight: 500;
+.nav-links a{
     text-decoration: none;
-    transition: all 0.4s ease-in-out;
+    color: #000;
+    transition: all 0.4s ease-in-out 0s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover{
+    background-color: white;
     color: #344D0C;
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding: 0.6rem;
+    border-radius: 5px;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.05);
 }
-
 
 /* Hamburger for Mobile */
 .hamburger {
     display: none;
+    background-color: none;
     flex-direction: column;
     cursor: pointer;
-    position: absolute;
-    left: 1.5rem;
+    border: none;
 }
 
-.bar {
-    width: 25px;
+.hamburger-line {
+    width: 30px;
     height: 3px;
     background: #344D0C;
     margin: 4px 0;
     transition: 0.3s;
 }
 
-/* Mobile Sidebar Navigation */
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 70%;
-    height: 100%;
-    background: #344D0C;
-    color: white;
-    padding-top: 4rem;
-    transition: left 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 
-.mobile-menu.open {
-    left: 0;
-}
-
-.mobile-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.mobile-menu a {
-    color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
-    display: block;
-    padding: 1rem;
-}
-
-/* Overlay when menu is open */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    display: none;
-    z-index: 5;
-}
-
-.overlay.active {
-    display: block;
-}
 
 /* Services Dropdown */
-.dropdown {
-    display: none;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.2);
-    padding-left: 1rem;
-}
 
-.dropdown a {
-    font-size: 1rem;
-}
-
-.services:hover .dropdown {
+/* Dropdown Container */
+.dropdown-container {
+    position: relative;
     display: flex;
-}
+    align-items: center;
+  }
+  
+  /* Dropdown Button */
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000;
+    position: relative;
+  }
+  
+  /* Align arrow properly */
+  .arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+  }
+  
+  /* Dropdown Panel */
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  
+  /* Dropdown Links */
+  .dropdown a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown a:hover {
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+
+
 
 
 .sign-up-btn{
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     background-color: #344D0C;
     color: #fff;
-    margin-left: 1rem;
     border-radius: 5px;
     border: none;
-    font-weight: 200;
+    font-weight: 300;
+    transition: background-color 0.4s ease;
+    font-size: 1rem;
+}
+
+.sign-up-btn:hover{
+    background-color: #131C05;
 }
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+@media screen and (max-width: 768px) {
+    body.no-scroll{
+        overflow: hidden;
     }
-    
-    .nav-container h1 {
-        text-align: center;
-        flex-grow: 1;
+    .logo{
+        order: 2;
+        margin: 0 auto;
     }
 
+    .sign-up-btn{
+        order: 3;
+    }
+
+    .sign-up-btn{
+        padding: 0.5rem 1.5rem;
+        background-color: #344D0C;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        font-weight: 200;
+        transition: background-color 0.4s ease;
+    }
+    
+    .sign-up-btn:hover{
+        background-color: #131C05;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
     .nav-links {
-        display: none;
+        display: none;  /* Hide by default on mobile */
+        flex-direction: column;
+        background-color: #344D0C;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 111px;
+        left: 0;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+      .nav-links.active{
+        display: flex;
+        padding: 6rem 2rem;
+    }
+
+    .nav-links.active li{
+        margin-bottom: 2rem;
+    }
+
+    .nav-links.active a{
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .nav-links.active a:hover{
+        background-color: #131C05;
+        color: #fff;
+        font-weight: bold;
+        padding: 0.6rem;
+        border-radius: 5px;
+        box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .dropdown {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+      }
+
+    .dropdown-btn{
+        color: white;
+        font-size: 1.2rem;
     }
 }

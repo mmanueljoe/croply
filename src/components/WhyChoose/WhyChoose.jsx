@@ -6,7 +6,7 @@ const WhyChoose = () => {
     const navigateFamSign = useNavigate();
   return (
     <>
-        <div className="why-choose-container">
+        <div className="why-choose-container" id="farmer">
             <h1>Why Choose Croply?</h1>
             <div className="why-choose-content">
                 <h2>Farmers</h2>

@@ -1,0 +1,74 @@
+.learn-container{
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+}
+
+.learn-container p{
+    margin-bottom: 1rem;
+}
+
+.content-container{
+    margin-bottom: 1rem;
+}
+
+.what-is h2{
+    margin-bottom: 1rem;
+}
+
+.what-is ol{
+    padding: 0 1rem;
+}
+
+.what-is ol > li{
+    margin-bottom: 1.5rem;
+}
+
+.what-is ol ul{
+    padding: 0 0.5rem;
+}
+
+.what-is ol ul li{
+   list-style-position: inside;
+   list-style: disc;
+}
+
+
+.how h2{
+    margin-bottom: 1rem;
+}
+
+.how p{
+    margin-bottom: 0;
+}
+
+.how ol{
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.benefits h2{
+    margin-bottom: 1rem;
+}
+
+.benefits p{
+    margin-bottom: 0;
+}
+
+.benefits ul{
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.local h2{
+    margin-bottom: 1rem;
+}
+
+.local p{
+    margin-bottom: 0;
+}
+
+.local ul{
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}

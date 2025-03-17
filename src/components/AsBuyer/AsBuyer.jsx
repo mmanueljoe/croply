@@ -7,7 +7,7 @@ const AsBuyer = () => {
     const navigateSign = useNavigate();
     return (
         <>
-            <div className="as-buyer-container">
+            <div className="as-buyer-container" id="buyer">
                 <div className="buyer-content">
                     <h2>Buyer</h2>
                     <p>Source Fresh, Quality Crops with Ease</p>

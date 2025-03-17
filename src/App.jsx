@@ -8,6 +8,7 @@ import FarmerDashboard from './components/FarmerDashboard/FarmerDashboard';
 import BuyerSignUp from './pages/BuyerSignUp/BuyerSignUp';
 import BuyerLogin from './pages/BuyerLogin/BuyerLogin';
 import BuyerDasboard from './components/BuyerDashboard/BuyerDasboard';
+import LearnMore from './pages/LearnMore/LearnMore';
 
 function App() {
   return (
@@ -39,9 +40,14 @@ function App() {
                 <Route index element={<h1>Home</h1>} />
                 <Route path='orders' element={<h1>Orders</h1>} />
                 <Route path='market-prices' element={<h1>Market Prices</h1>}/>
+                <Route path='marketplace' element={<h1>Marketplace</h1>} />
+                <Route path='orders' element={<h1>Orders</h1>} />
                 <Route path='resources' element={<h1>Resources</h1>}/>
                 <Route path='community' element={<h1>Community</h1>} />
             </Route>
+
+            {/* learn more */}
+            <Route path='/learn-more' element={<LearnMore />} />
           </Routes>
       </div>
     </>

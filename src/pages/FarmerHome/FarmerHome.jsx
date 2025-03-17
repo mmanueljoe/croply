@@ -6,7 +6,7 @@ import assets from "../../assets";
 
 const FarmerHome = () => {
   return (
-    <div className="dashboard-home">
+    <div className="fa-dashboard-home">
       {/* Header Section */}
       <div className="dashboard-header">
         <div>
@@ -51,7 +51,8 @@ const FarmerHome = () => {
 
       {/* Services Section */}
       <div className="services-section">
-        <h2>Our Services</h2>
+        <h2>Services</h2>
+
         <div className="services-grid">
           {services.map((service) => (
             <div key={service.id} className="service-card">
@@ -62,6 +63,7 @@ const FarmerHome = () => {
               />
               <div className="service-overlay">
                 <h3>{service.title}</h3>
+                <p>{service.description}</p>
               </div>
             </div>
           ))}

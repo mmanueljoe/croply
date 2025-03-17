@@ -5,7 +5,7 @@ import "./Blog.css"
 const Blog = () => {
   return (
     <>
-      <div className="blog-container">
+      <div className="blog-container" id="blog">
         <h1>Blog</h1>
         <div className="blog-content">
           {blogData.map((post) => (

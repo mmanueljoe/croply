@@ -4,7 +4,7 @@ import assets from '../../assets';
 const About = () => {
     return (
         <>
-            <div className='about-container'>
+            <div className='about-container' id='about'>
                 <h1>
                     About Us
                 </h1>

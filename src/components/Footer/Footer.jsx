@@ -21,7 +21,7 @@ const Footer = () => {
     };
 
     return (
-        <footer>
+        <footer id='contact'>
             <div className='footer-logo'>
                 <Link to={'/'}>
                     <h1>Croply</h1>
