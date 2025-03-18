@@ -18,6 +18,19 @@ import woman from "./images/woman.png";
 import facebookLogo from "./images/facebookLogo.png";
 import googleLogo from "./images/googleLogo.png";
 import warning_icon from "./images/warning-icon.png";
+import tomatoes from "./images/tomatoes.png";
+import onions from "./images/onions.png";
+import ginger from "./images/ginger.png";
+import farmerImg1 from "./images/farmerImg1.png";
+import farmerImg2 from "./images/farmerImg2.png";
+import pea from "./images/pea.png";
+import beans from "./images/beans.jpg";
+import carrot from "./images/carrot.png";
+import gardenEgg from "./images/gardenEgg.jpg";
+import maize from "./images/maize.jpg";
+import okro from "./images/okro.jpg";
+import tomato from "./images/tomato.png";
+
 
 const assets = {
     heroImg,
@@ -38,7 +51,19 @@ const assets = {
     woman,
     googleLogo,
     facebookLogo,
-    warning_icon
+    warning_icon,
+    ginger,
+    tomatoes,
+    onions,
+    farmerImg1,
+    farmerImg2,
+    pea,
+    beans,
+    carrot,
+    gardenEgg,
+    maize,
+    okro,
+    tomato
 };
 
 export default assets;

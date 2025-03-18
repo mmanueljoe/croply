@@ -1,0 +1,250 @@
+:root{
+    --primary: #EF9D2E;
+    --text: #000;
+
+}
+
+
+.bu-dashboard-header{
+    margin-bottom: 2rem;
+}
+
+
+.bu-stat-container{
+    border: 1px solid orange;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.bu-stat-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+}
+
+.bu-stat-box{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.bu-stat-title{
+    background-color: #EF9D2E;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+
+.bu-stat-value{
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.05);
+    width: 120px;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.bu-stat-title:hover, .bu-stat-value:hover{
+    transform: scale(1.05);
+}
+
+.bu-stat-value{
+    font-weight: 300;
+}
+
+ /* available listing section styling */
+.bu-listings-container{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* overflow: hidden; */
+    max-width: 100%;
+}
+
+.bu-listings-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.bu-listings-header .bu-see-all{
+    text-decoration: none;
+    color: gray;
+}
+
+.bu-listings-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bu-listings-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+.bu-listings-img-container{
+    max-height: 100%;
+    display: flex;
+}
+
+.bu-listings-img-container img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.bu-listings-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.bu-listings-name{
+    background-color: #EF9D2E;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 4rem;
+}
+
+.bu-listings-name h3{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.bu-listings-details{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bu-listings-quantity, .bu-listings-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bu-listings-quantity p, .bu-listings-price p{
+    font-size: 0.7rem;
+}
+
+.bu-location-name{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid rgba(0,0,0,0.1);
+}
+
+.bu-name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bu-name span{
+    font-size: 0.9rem;
+}
+
+.bu-location{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bu-location span{
+    font-size: 0.9rem;
+}
+
+
+ /* mobile and tablet responsiveness */
+@media only screen and (max-width: 768px){
+    .bu-stat-container{
+        border: 1px solid orange;
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .bu-stat-grid{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+     /* available listing section styling */
+    .bu-listings-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    .bu-listings-img-container img{
+        max-width: 100%;
+    }
+
+    .bu-listings-name{
+        background-color: #EF9D2E;
+        height: 50px;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .bu-stat-grid{
+        grid-template-columns: 1fr;
+    }
+    .bu-stat-container{
+        border: 1px solid orange;
+        padding: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .bu-listings-card{
+        grid-template-columns: 1fr;
+    }
+
+    .bu-listings-name{
+        background-color: #EF9D2E;
+        height: 50px;
+        display: flex;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 1rem;
+    }
+
+
+    .bu-listings-img-container img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}

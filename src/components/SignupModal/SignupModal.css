@@ -68,3 +68,33 @@
     background: #2b400a;
     color: #fff;
   }
+
+  @media only screen and (max-width: 768px){
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      position: relative;
+      width: 95%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .role-button {
+      padding: 2rem 3rem;
+      border-radius: 8px;
+      border-width: 0.5px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      text-align: center;
+      border: 0.5px solid rgba(0, 0, 0, 0.5);
+    }
+  }

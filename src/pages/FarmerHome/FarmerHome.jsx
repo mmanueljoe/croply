@@ -69,6 +69,7 @@ const FarmerHome = () => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };
