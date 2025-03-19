@@ -1,0 +1,206 @@
+.fa-listings-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: calc(100vw - 250px);
+    left: 250px;
+    height: 70px;
+    z-index: 999;
+    padding: 1rem 2rem;
+    top: 100px;
+    background-color: #fff;
+}
+
+.fa-listings-header button{
+    padding: 0.8rem;
+}
+
+.fa-active-listing-btn{
+    border-radius: 10px;
+    border: 1px solid #344D0C;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.fa-listings-container{
+    padding-top: 100px;
+}
+
+
+.fa-active-listing-add{
+    background: none;
+    border: none;
+}
+
+.fa-add-icon{
+    font-size: 2rem;
+    color: #344D0C;
+    cursor: pointer;
+}
+
+
+/* farmer listing styling */
+.fa-listings-items-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.fa-listings-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr;
+    width: 100%;
+}
+
+.fa-edit-delete-icon{
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fa-edit{
+    text-decoration: none;
+    color: #344D0C;
+    cursor: pointer;
+}
+
+.fa-delete{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fa-edit:hover{
+    color: #000;
+}
+
+.fa-edit::before{
+    content: "";
+}
+
+.fa-listings-items{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.fa-listings-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.fa-listings-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.fa-listings-item-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fa-listings-item-name{
+    background-color: #344D0C;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-top-right-radius: 10px;
+}
+
+.fa-listings-item-name h3{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.fa-listings-qua-price{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-listings-qua{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fa-listings-qua p, .fa-listings-price p{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.fa-listings-qua h3, .fa-listings-price h3{
+    font-weight: 400;
+}
+
+.fa-listings-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+@media only screen and (max-width: 768px){
+    .fa-listings-header{
+        width: 100vw;
+        left: 0;
+        top: 60px;
+        padding: 1rem 1rem;
+    }
+
+    .fa-add-icon{
+        font-size: 1.5rem;
+    }
+
+    .fa-listings-item{
+        grid-template-columns: 1fr;
+    
+    }
+
+    .fa-active-listing-btn{
+        border-radius: 10px;
+        border: 1px solid #344D0C;
+        background: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .fa-listings-item-name{
+        border-top-right-radius: 0;
+    }
+
+    .fa-listings-item-img img{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .fa-listings-header{
+        width: 100vw;
+        left: 0;
+        top: 60px;
+    }
+
+    .fa-add-icon{
+        font-size: 1.5rem;
+    }
+}

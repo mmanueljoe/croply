@@ -11,7 +11,7 @@
 body{
   font-family: "Inter", serif;
   font-optical-sizing: auto;
-  background-color: #f0f0f0;
+  background-color: #fff;
   animation: appear linear; 
 }
 button{

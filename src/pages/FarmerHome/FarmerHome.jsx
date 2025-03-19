@@ -3,6 +3,7 @@ import { services } from "../../data/services";
 // import { FaLeaf } from "react-icons/fa";
 import "./FarmerHome.css";
 import assets from "../../assets";
+import { farmerStat } from "../../data/farmerStat";
 
 const FarmerHome = () => {
   return (
@@ -21,33 +22,27 @@ const FarmerHome = () => {
       </div>
 
       {/* Stats Grid */}
-      <div className="stat-container">
-      <div className="stats-grid">
-        <div className="stat-box">
-          <h3>Number of Active Listings</h3>
-          <p>12</p>
-        </div>
-        <div className="stat-box">
-          <h3>Total Sales</h3>
-          <p>$4,560</p>
-        </div>
-        <div className="stat-box">
-          <h3>Buyer Inquiries</h3>
-          <p>8</p>
-        </div>
-        <div className="stat-box">
-          <h3>Weather</h3>
-          <p>24°C Sunny</p>
-        </div>
-      </div>
+       <div className="fa-stat-container">
+                  <div className="fa-stat-grid">
+                      <div className="fa-stat-box">
+                          <div className="fa-stat-title">Number of Listing</div>
+                          <div className="fa-stat-value">{farmerStat.numberOfListing}</div>
+                      </div>
+                      <div className="fa-stat-box">
+                          <div className="fa-stat-title">Total Sales</div>
+                          <div className="fa-stat-value">{farmerStat.totalSales}</div>
+                      </div>
+                      <div className="fa-stat-box">
+                          <div className="fa-stat-title">Buyer Enquiries</div>
+                          <div className="fa-stat-value">{farmerStat.buyerEnquiries}</div>
+                      </div>
+                      <div className="fa-stat-box">
+                          <div className="fa-stat-title">Weather</div>
+                          <div className="fa-stat-value">{farmerStat.weather}</div>
+                      </div>
+                  </div>
       </div>
      
-
-      {/* Additional Stats */}
-      {/* <div className="additional-stats">
-        <h3>Monthly Performance</h3>
-        
-      </div> */}
 
       {/* Services Section */}
       <div className="services-section">
@@ -69,7 +64,6 @@ const FarmerHome = () => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };

@@ -30,6 +30,9 @@ import gardenEgg from "./images/gardenEgg.jpg";
 import maize from "./images/maize.jpg";
 import okro from "./images/okro.jpg";
 import tomato from "./images/tomato.png";
+import service4 from "./images/service4.png";
+import service5 from "./images/service5.png";
+import service6 from "./images/service6.png";
 
 
 const assets = {
@@ -63,7 +66,10 @@ const assets = {
     gardenEgg,
     maize,
     okro,
-    tomato
+    tomato,
+    service4,
+    service5,
+    service6
 };
 
 export default assets;
