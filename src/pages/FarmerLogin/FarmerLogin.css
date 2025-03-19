@@ -11,6 +11,7 @@
     padding: 4rem;
     flex-direction: column;
     justify-content: center;
+    background-color: #fff;
 }
 
 .farmer-login-left h2{
@@ -131,11 +132,21 @@
 
 /* responsive design */
 @media (max-width: 768px){
-    .famer-login-container{
+    .farmer-login-container{
         grid-template-columns: 1fr
     }
     
-    .farmer-login-left{
-        height: 60vh
+    .farmer-login-right{
+        height: 70vh
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .farmer-login-container{
+        grid-template-columns: 1fr
+    }
+
+    .farmer-login-right{
+        height: 70vh;
     }
 }

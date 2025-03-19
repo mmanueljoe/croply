@@ -10,6 +10,7 @@
     padding: 4rem;
     flex-direction: column;
     justify-content: center;
+    background-color: #fff;
 }
 
 .buyer-login-left h2 {
@@ -160,7 +161,12 @@
         grid-template-columns: 1fr;
     }
 
-    .buyer-login-left {
+
+    .buyer-login-right{
         height: 60vh;
     }
+}
+
+@media only screen and (max-width: 625px){
+    
 }

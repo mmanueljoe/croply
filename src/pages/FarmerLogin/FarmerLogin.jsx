@@ -23,6 +23,7 @@ const FarmerLogin = () => {
                       <Link>
                         Forgot Password?
                       </Link>
+                      
                   </div>
                    
                   <input type="submit" value="Login" />
