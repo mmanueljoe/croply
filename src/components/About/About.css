@@ -61,6 +61,7 @@
     height: auto;
     border-radius: 10px;
     overflow: hidden;
+    /* gap: 7rem; */
 }
 
 .about-img-man img, .about-img-lady img {
@@ -68,10 +69,13 @@
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    gap: 13;
 }
 
+
+
 .arrow {
-    width: 220px; /* Bigger size */
+    width: 340px; /* Bigger size */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -80,9 +84,12 @@
 }
 
 .arrow img {
-    width: 100%;
+    width: 180%;
     height: auto;
     display: block;
+    position: relative;
+    top: 3.5rem;
+    left: -14.5rem;
 }
 
 /* Responsive Styles */
