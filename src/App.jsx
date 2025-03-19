@@ -11,6 +11,7 @@ import BuyerDasboard from './components/BuyerDashboard/BuyerDasboard';
 import LearnMore from './pages/LearnMore/LearnMore';
 import BuyerHome from './pages/BuyerHome/BuyerHome';
 import BuyerMarketplace from './pages/BuyerMarketplace/BuyerMarketplace';
+import FarmerListing from './pages/FarmerListing/FarmerListing';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             {/* farmer dashboard */}
             <Route path="/farmer/dashboard" element={<FarmerDashboard />}>
               <Route index element={<FarmerHome />} />
-              <Route path="listings" element={<h1>Listing</h1>} />
+              <Route path="listings" element={<FarmerListing />} />
               <Route path="market-prices" element={<h1>Market Prices</h1>} />
               <Route path="resources" element={<h1>Resources</h1>} />
               <Route path="community" element={<h1>Community</h1>}/>

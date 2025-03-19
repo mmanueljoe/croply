@@ -5,6 +5,8 @@
 }
 
 
+
+
 .dashboard-header {
   display: flex;
   justify-content: space-between;
@@ -26,42 +28,66 @@
   height: 30px;
 }
 
-.stat-container{
-  padding: 2rem 1rem;
-  border: 0.5px solid var(--primary-green);
+
+/* farmer stat styling */
+.fa-stat-container{
+  border: 1px solid #344D0C;
+  padding: 2rem;
+  margin: 1rem 0;
 }
 
-.stats-grid {
+.fa-stat-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
 }
 
-.stat-box {
-  background: var(--primary-green);
-  color: white;
-  padding: 1.5rem;
-  border-radius: 10px;
+.fa-stat-box{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  text-wrap: wrap;
 }
 
-.stat-box:hover{
-  transform: translateY(-5px);
+.fa-stat-title{
+  background-color: #344D0C;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  color: #fff;
 }
 
-.stat-box h3{
-  font-size: 1rem;
+
+.fa-stat-value{
+  background-color: #fff;
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.05);
+  width: 120px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+
+.fa-stat-title:hover, .fa-stat-value:hover{
+  transform: scale(1.05);
+}
+
+.fa-stat-value{
   font-weight: 300;
 }
 
-.additional-stats {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
 
 /* Services Section */
 .services-section {
@@ -78,10 +104,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /*repeat(auto-fit, minmax(200px, 1fr))*/
   gap: 2rem;
-  
 }
 
 .service-card {
+  width: 100%;
+  height: 420px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -95,7 +122,7 @@
 
 .service-image {
   width: 100%;
-  height: 450px;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -109,6 +136,7 @@
   color: white;
   padding: 2rem 1rem;
   text-align: center;
+  height: 180px;
 }
 
 .service-overlay h3 {
@@ -119,14 +147,14 @@
 
 .service-overlay p{
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 1rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr 1fr;
   }
   
   .fa-dashboard-home{
@@ -136,10 +164,24 @@
   .service-image {
     height: 400px;
   }
+
+  .fa-stat-grid{
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 625px) {
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .fa-stat-grid{
+    grid-template-columns: 1fr;
+  }
+  .fa-stat-container{
+      padding: 0.5rem;
+      margin: 1rem 0;
   }
 }
