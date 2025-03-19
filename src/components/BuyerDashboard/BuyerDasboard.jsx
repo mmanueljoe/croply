@@ -4,11 +4,13 @@ import { FaUser, FaHome, FaChartLine, FaShoppingCart, FaList } from 'react-icons
 import { useState, useEffect } from 'react';
 import SignOutModalBuyer from '../../components/SignOutModalBuyer/SignOutModalBuyer';
 import { TbArrowLeftToArc } from "react-icons/tb";
+import ProfileModal from '../ProfileModal/ProfileModal';
 
 
 const BuyerDasboard = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isProfileOpen, setProfileOpen] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -41,7 +43,10 @@ const BuyerDasboard = () => {
             </Link>
           </div>
           <div className="bu-nav-right">
-            <FaUser className="bu-profile-icon" />
+            <FaUser 
+              className="bu-profile-icon" 
+              onClick={() => setProfileOpen(!isProfileOpen)}
+            />
           </div>
         </nav>
       )}
@@ -96,6 +101,11 @@ const BuyerDasboard = () => {
           <Outlet />
         </div>
       </main>
+
+      <ProfileModal 
+        isOpen={isProfileOpen}
+        onClose={() => setProfileOpen(false)}
+      />
 
       <SignOutModalBuyer 
         isOpen={isModalOpen} 

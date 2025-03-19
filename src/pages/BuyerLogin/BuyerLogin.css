@@ -5,39 +5,33 @@
 }
 
 /* Left column styling */
-.login-left {
+.buyer-login-left {
     display: flex;
     padding: 4rem;
     flex-direction: column;
     justify-content: center;
 }
 
-.login-left h2 {
+.buyer-login-left h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #2A4D9B; /* Blue accent */
+    font-size: 2rem; /* Blue accent */
 }
 
-.login-left p {
+.buyer-login-left p {
     text-align: center;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
 /* Form styling */
-.login-form {
+.buyer-login-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.passwd-input {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.passwd-input input {
+.buyer-login-form input{
     width: 100%;
     padding: 1rem;
     padding-right: 2.5rem; /* Space for icon */
@@ -48,9 +42,31 @@
     transition: border-color 0.3s ease;
 }
 
-.passwd-input input:focus {
+.buyer-login-form input:focus{
     outline: none;
-    border-color: #2A4D9B; /* Blue accent */
+    border-color: #EF9D2E; 
+}
+
+.buyer-passwd-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.buyer-passwd-input input {
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2.5rem; /* Space for icon */
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 0.9rem;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.buyer-passwd-input input:focus {
+    outline: none;
+    border-color: #EF9D2E; /* Blue accent */
 }
 
 /* Toggle password eye icon */
@@ -73,10 +89,10 @@
 }
 
 /* Login button */
-.login-form input[type="submit"] {
+.buyer-login-form input[type="submit"] {
     margin-top: 1rem;
-    background: #2A4D9B;
-    color: white;
+    background: #EF9D2E;
+    color: #000;
     border: none;
     padding: 1rem;
     border-radius: 5px;
@@ -85,29 +101,31 @@
 }
 
 /* Link Styling */
-.login-left .already {
+.buyer-login-left .buyer-already {
     text-align: center;
     margin-top: 2rem;
     color: #666;
     text-decoration: none;
 }
 
-.login-left .already span {
-    color: #2A4D9B;
+.buyer-login-left .buyer-already span {
+    color: #EF9D2E;
     font-weight: 600;
     text-decoration: underline;
 }
 
 /* Right column styling */
-.login-right {
+.buyer-login-right {
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    width: 100%;
 }
 
-.login-right::before {
+.buyer-login-right::before {
     content: "";
     position: absolute;
     top: 0;
@@ -118,7 +136,7 @@
     z-index: 1;
 }
 
-.login-right h1 {
+.buyer-login-right h1 {
     z-index: 2;
     color: #fff;
     font-family: "Italiana", sans-serif;
@@ -127,9 +145,12 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.login-right img {
+.buyer-login-right img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
     object-fit: cover;
 }
 
@@ -139,7 +160,7 @@
         grid-template-columns: 1fr;
     }
 
-    .login-left {
+    .buyer-login-left {
         height: 60vh;
     }
 }

@@ -55,6 +55,7 @@
 .buyer-right-col h3 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 /* Google & Facebook Buttons */
@@ -73,10 +74,11 @@
     padding: 0.8rem;
     font-size: 0.9rem;
     font-weight: 300;
-    border: 1px solid #1877F2;
-    border-radius: 5px;
+    border: 0.5px solid #EF9D2E;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
+    font-weight: bold;
 }
 
 /* Social Logos */
@@ -102,11 +104,11 @@
 .facebook-btn {
     background: #fff;
     color: #000;
-    border: 1px solid #1877F2;
+    border: 1px solid #EF9D2E;
 }
 
 .facebook-btn:hover {
-    background: #166FE5;
+    background: #EF9D2E;
     transform: scale(1.02);
 }
 
@@ -135,22 +137,24 @@
 
 .buyer-form input:focus {
     outline: none;
-    border-color: #0056b3;
+    border-color: #EF9D2E;
 }
 
 .buyer-form input[type="submit"] {
     margin-top: 2rem;
-    background: #0056b3;
+    background: #EF9D2E;
     color: white;
     border: none;
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    color: #000;
+    font-family: "Inter", sans-serif;
 }
 
 .buyer-form input[type="submit"]:hover {
-    background: #003d82;
+    background: #EF9D2E;
 }
 
 .error {
@@ -166,7 +170,7 @@
 }
 
 .buyer-right-col a span {
-    color: #0056b3;
+    color: #EF9D2E;
     font-weight: 600;
     text-decoration: underline;
 }

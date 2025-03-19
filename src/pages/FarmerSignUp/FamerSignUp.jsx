@@ -1,8 +1,17 @@
 import "./FarmerSignUp.css";
 import assets from "../../assets";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
 
 const FamerSignUp = () => {
+
+    const navigateToFarmerLogin = useNavigate();
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        navigateToFarmerLogin("/login/farmer");
+    }
   return (
     <>
         <div className="farmer-signup-container">
@@ -15,25 +24,26 @@ const FamerSignUp = () => {
                     <h3>Create Account</h3>
                     <div className="farmer-btns">
                         <button>
+                        <img src={assets.googleLogo} alt="Google Logo" className="social-logo"/>
                             Sign up with Google
                         </button>
                         <button>
+                        <img src={assets.facebookLogo} alt="Facebook Logo" className="social-logo"/>
                             Sign up with Facebook
                         </button>
                     </div>
                 <p className="or">-OR-</p>
-                <form action="" className="fam-form">
+                <form className="fam-form" onSubmit={handleSubmit}>
                     <input type="text" placeholder="Full Name"/>
                     <input type="tel" placeholder="Phone Number"/>
                     <input type="text" placeholder="Password"/>
                     <input type="submit" value='Create Account'/>
                 </form>
-                <Link>
+                <Link to="/login/farmer">
                     Already have an account? <span>Login</span>
                 </Link>
 
             </div>
-
         </div>
     </>
   )

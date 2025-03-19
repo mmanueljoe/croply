@@ -11,9 +11,11 @@ import {
   // FaSignOutAlt
 } from 'react-icons/fa';
 import { TbArrowLeftToArc } from "react-icons/tb";
+import ProfileModal from '../ProfileModal/ProfileModal';
 
 const FarmerDashboard = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isProfileOpen, setProfileOpen] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -42,7 +44,10 @@ const FarmerDashboard = () => {
             </Link>
           </div>
           <div className="fa-nav-right">
-            <FaUser className="fa-profile-icon" />
+            <FaUser 
+              className="fa-profile-icon"
+              onClick={() => setProfileOpen(!isProfileOpen)}
+              />
           </div>
         </nav>
       )}
@@ -98,6 +103,11 @@ const FarmerDashboard = () => {
         </div>
         
       </main>
+
+      <ProfileModal
+        isOpen={isProfileOpen}
+        onClose={() => setProfileOpen(false)}
+      />
     </div>
     </>
   )

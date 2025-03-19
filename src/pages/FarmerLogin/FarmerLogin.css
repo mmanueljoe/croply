@@ -6,39 +6,43 @@
 
 
 /* Left column styling*/
-.login-left{
+.farmer-login-left{
     display: flex;
     padding: 4rem;
     flex-direction: column;
     justify-content: center;
 }
 
-.login-left h2{
+.farmer-login-left h2{
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
 }
 
-.login-left p{
+.farmer-login-left p{
     text-align: center;
     font-weight: 700;
     margin-bottom: 2rem;
+    font-family: "Inter", sans-serif;
 }
 
 
 /* form styling */
-.login-form{
+.farmer-login-form{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.passwd-input input{
+.farmer-passwd-input input{
     width: 100%;
     margin-bottom: 0.5rem;
+    font-family: "Inter", sans-serif;
 }
 
 
-.passwd-input a{  /* forgot password */
+.farmer-passwd-input a{  /* forgot password */
     display: block;
     text-align: end;
     text-decoration: none;
@@ -47,7 +51,7 @@
     font-weight: 800;
 }
 
-.login-form input{
+.farmer-login-form input{
     padding: 1rem 0;
     border: none;
     border-bottom: 2px solid #ddd;
@@ -56,12 +60,12 @@
     transition: border-color 0.3s ease;
 }
 
-.login-form input:focus{
+.farmer-login-form input:focus{
     outline: none;
     border-color: #344D0C;
 }
 
-.login-form input[type="submit"] {
+.farmer-login-form input[type="submit"] {
     margin-top: 1rem;
     background: #344D0C;
     color: white;
@@ -70,18 +74,19 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-family: "Inter", sans-serif;
 }
 
 
 /* Link Styling */
-.login-left .already {
+.farmer-login-left .farmer-already {
     text-align: center;
     margin-top: 2rem;
     color: #666;
     text-decoration: none;
 }
 
-.login-left .already span {
+.farmer-login-left .farmer-already span {
     color: #344D0C;
     font-weight: 600;
     text-decoration: underline;
@@ -89,7 +94,7 @@
 
 
 /* right column styling */
-.login-right{
+.farmer-login-right{
     position: relative;
     overflow: hidden;
     display: flex;
@@ -97,7 +102,7 @@
     justify-content: center;
 }
 
-.login-right::before{
+.farmer-login-right::before{
     content: "";
     position: absolute;
     top: 0;
@@ -108,7 +113,7 @@
     z-index: 1;
 }
 
-.login-right h1{
+.farmer-login-right h1{
     z-index: 2;
     color: #fff;
     font-family: "Italiana",sans-serif;
@@ -117,7 +122,7 @@
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-.login-right img{
+.farmer-login-right img{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -130,7 +135,7 @@
         grid-template-columns: 1fr
     }
     
-    .login-left{
+    .farmer-login-left{
         height: 60vh
     }
 }

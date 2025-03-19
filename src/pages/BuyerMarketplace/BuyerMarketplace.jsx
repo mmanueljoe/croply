@@ -13,14 +13,16 @@ const BuyerMarketplace = () => {
     <>
         <div className="bu-marketplace-container">
             <div className="bu-marketplace-header">
-                <Link>
-                    <MdKeyboardArrowLeft />
+                <Link className="bu-marketplace-link" to="/buyer/dashboard">
+                    <MdKeyboardArrowLeft className="bu-marketplace-arrow"/>
                     Marketplace
                 </Link>
                 <div className="bu-marketplace-search">
                     <IoSearch className="bu-marketplace-search-icon"/>
                     <input type="text" className="bu-marketplace-search-field"/>
+                    <div className="settings-icon-container">
                     <GiSettingsKnobs className="bu-marketplace-setting-icon"/>
+                    </div>
                 </div>
                 <div>
                     <TiShoppingCart className="bu-marketplace-cart-icon"/>
