@@ -1,10 +1,10 @@
 
-import heroImg from "./images/hero-img.png";
+import heroImg from "./images/hero-img.jpg";
 import lady from "./images/lady.png";
 import man from "./images/man.png";
 import whyImg from "./images/why-img.png";
 import blog from "./images/blog.png";
-import veg from "./images/veg.png"
+import veg from "./images/veg.jpg"
 import service1 from "./images/service1.png";
 import service2 from "./images/service2.png";
 import ai_logo from "./images/ai-logo.png";
@@ -13,7 +13,7 @@ import arrow1 from "./images/arrow1.png";
 import blog1 from "./images/blog1.png";
 import blog2 from "./images/blog2.png";
 import blog3 from "./images/blog3.png";
-import blog4 from "./images/blog4.png";
+import blog4 from "./images/blog4.jpg";
 import woman from "./images/woman.png";
 import facebookLogo from "./images/facebookLogo.png";
 import googleLogo from "./images/googleLogo.png";
@@ -30,9 +30,10 @@ import gardenEgg from "./images/gardenEgg.jpg";
 import maize from "./images/maize.jpg";
 import okro from "./images/okro.jpg";
 import tomato from "./images/tomato.png";
-import service4 from "./images/service4.png";
+import service4 from "./images/service4.jpg";
 import service5 from "./images/service5.png";
 import service6 from "./images/service6.png";
+import tractor from "./images/tractor.jpg";
 
 
 const assets = {
@@ -69,7 +70,8 @@ const assets = {
     tomato,
     service4,
     service5,
-    service6
+    service6,
+    tractor
 };
 
 export default assets;
