@@ -13,6 +13,7 @@ import BuyerHome from './pages/BuyerHome/BuyerHome';
 import BuyerMarketplace from './pages/BuyerMarketplace/BuyerMarketplace';
 import FarmerListing from './pages/FarmerListing/FarmerListing';
 
+
 function App() {
   return (
     <>
@@ -51,6 +52,7 @@ function App() {
 
             {/* learn more */}
             <Route path='/learn-more' element={<LearnMore />} />
+
           </Routes>
       </div>
     </>

@@ -36,4 +36,12 @@ export const blogData = [
       title: "Mango Seedling", 
       description: "Mango (Mangifera indica) is a valuable tropical fruit tree grown for its sweet, nutritious fruits. Proper selection and management of mango seedlings are essential for high yield, disease resistance, and good fruit quality."
     },
+    {
+      id: 5,
+      image: assets.blog4,
+      date: "April 12, 2022",
+      author: "John Doe",
+      title: "Mango Seedling", 
+      description: "Mango (Mangifera indica) is a valuable tropical fruit tree grown for its sweet, nutritious fruits. Proper selection and management of mango seedlings are essential for high yield, disease resistance, and good fruit quality."
+    }
 ];

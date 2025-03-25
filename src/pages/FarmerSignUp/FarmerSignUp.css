@@ -125,6 +125,8 @@
     font-family: "Inter", sans-serif;
 }
 
+
+
 /* Link Styling */
 .fam-right-col a {
     text-align: center;
@@ -157,3 +159,24 @@
         padding: 2rem 1rem;
     }
 }
+
+
+
+/* EYE */
+.fam-form input {
+    width: 100%; 
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.password-container input {
+    width: calc(101% - 30px); 
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+
+
+/* EYE */

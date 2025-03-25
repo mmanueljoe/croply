@@ -80,7 +80,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-10deg); /* Adjust rotation */
-    z-index: -1; /* Ensure it's above other elements */
+    z-index: -1; 
 }
 
 .arrow img {
@@ -88,8 +88,8 @@
     height: auto;
     display: block;
     position: relative;
-    top: 3.5rem;
-    left: -14.5rem;
+    top: 3rem;
+    left: -16.4rem;
 }
 
 /* Responsive Styles */

@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { services } from "../../data/services";
-// import { FaLeaf } from "react-icons/fa";
 import "./FarmerHome.css";
 import assets from "../../assets";
 import { farmerStat } from "../../data/farmerStat";

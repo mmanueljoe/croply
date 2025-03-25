@@ -81,10 +81,13 @@ const Navbar = () => {
           <Link to="/" onClick={(e) => scrollToSection("about", e)}>About</Link>
         </li>
         <li className="dropdown-container">
-          <button className="dropdown-btn" onClick={toggleDropdown}>
-            Services{" "}
-            {isDropdownOpen ? <IoIosArrowUp className="arrow" /> : <IoIosArrowDown className="arrow" />}
-          </button>
+        <button className="dropdown-btn" onClick={toggleDropdown}>
+  Services
+  <span className="arrow-container">
+    {isDropdownOpen ? <IoIosArrowUp className="arrow" /> : <IoIosArrowDown className="arrow" />}
+  </span>
+</button>
+
           {isDropdownOpen && (
             <div className="dropdown">
               <Link to="/" onClick={(e) => { scrollToSection("farmer", e); setIsDropdownOpen(false); }}>

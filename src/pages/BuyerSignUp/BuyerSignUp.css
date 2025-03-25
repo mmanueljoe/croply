@@ -193,3 +193,24 @@
         padding: 2rem 1rem;
     }
 }
+
+/* PASSWORD CODES */
+.password-container {
+    position: relative;
+}
+
+.password-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
