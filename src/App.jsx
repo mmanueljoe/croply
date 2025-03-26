@@ -12,6 +12,7 @@ import LearnMore from './pages/LearnMore/LearnMore';
 import BuyerHome from './pages/BuyerHome/BuyerHome';
 import BuyerMarketplace from './pages/BuyerMarketplace/BuyerMarketplace';
 import FarmerListing from './pages/FarmerListing/FarmerListing';
+import FarmerResources from './pages/FarmerResources/FarmerResources';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
               <Route index element={<FarmerHome />} />
               <Route path="listings" element={<FarmerListing />} />
               <Route path="market-prices" element={<h1>Market Prices</h1>} />
-              <Route path="resources" element={<h1>Resources</h1>} />
+              <Route path="resources" element={<FarmerResources />} />
               <Route path="community" element={<h1>Community</h1>}/>
             </Route>
 

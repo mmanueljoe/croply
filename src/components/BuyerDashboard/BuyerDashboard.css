@@ -65,21 +65,28 @@
   padding: 0;
   margin: 0;
 }
+
 .bu-sidebar-nav li{
-  margin: 0.75rem 0;
+  margin: 1rem 0;
 }
 
 .bu-sidebar-nav a{
   color: var(--text);
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 6px;
   transition: all 0.2s ease;
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
 }
 
-.bu-sidebar-nav a.active{
+.bu-icon{
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.bu-sidebar-nav a.active, .bu-icon.active{
   font-weight: bold;
 }
 
