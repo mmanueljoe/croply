@@ -5,7 +5,8 @@ export const services = [
       id: 1,
       title: "Agricultural Inputs",
       description: "Access high-quality seeds, fertilizers, and pesticides to boost your crop yield and ensure healthy harvests.",
-      image: assets.service1
+      image: assets.service1,
+      path:"trials"
     },
     {
       id: 2,

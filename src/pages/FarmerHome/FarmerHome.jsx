@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { services } from "../../data/services";
 import "./FarmerHome.css";
 import assets from "../../assets";
@@ -49,7 +49,7 @@ const FarmerHome = () => {
 
         <div className="services-grid">
           {services.map((service) => (
-            <div key={service.id} className="service-card">
+            <Link key={service.id} className="service-card" to={service.path}>
               <img 
                 src={service.image} // Access asset through imported object
                 alt={service.title}
@@ -59,7 +59,7 @@ const FarmerHome = () => {
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

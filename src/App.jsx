@@ -12,6 +12,7 @@ import LearnMore from './pages/LearnMore/LearnMore';
 import BuyerHome from './pages/BuyerHome/BuyerHome';
 import BuyerMarketplace from './pages/BuyerMarketplace/BuyerMarketplace';
 import FarmerListing from './pages/FarmerListing/FarmerListing';
+import { Trials } from './pages/trials';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <Route path="market-prices" element={<h1>Market Prices</h1>} />
               <Route path="resources" element={<h1>Resources</h1>} />
               <Route path="community" element={<h1>Community</h1>}/>
+              <Route path="Trials" element={ <Trials /> }/>
             </Route>
 
             {/* buyer dashboard */}

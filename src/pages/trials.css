@@ -1,0 +1,133 @@
+/* Flexbox for the entire heads container */
+.heads {
+  display: flex;
+  flex-direction: row; /* Align child elements horizontally */
+  align-items: center;    /* Center vertically */
+  justify-content: space-between; /* Distribute space between elements */
+  width: 100%;            /* Full width */
+  padding: 20px;
+  position: fixed;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row; /* Align elements horizontally within sub */
+  align-items: center;  /* Center elements vertically within sub */
+  gap: 20px;            /* Space between the sub elements */
+}
+
+.agro-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.agro-icon {
+  font-size: 24px;
+  margin-right: 10px; /* Space between the icon and the title */
+}
+
+.head {
+  font-size: 24px;
+  margin: 0;
+}
+
+.search-bar {
+  margin-top: 0; /* No top margin needed since it's inline now */
+}
+
+.search-container {
+  position: relative;
+  width: 700px; /* Adjust the width of the search input */
+  margin-left: 2rem;
+}
+
+.search-container input {
+  width: 100%;
+  padding-right: 30px; /* Add space for the icon */
+  padding-left: 10px; /* Optional padding for text alignment */
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  gap: 5px; 
+}
+
+.image img {
+  width: 40px; /* Adjust the size of the logo */
+  height: auto;
+  position: relative;
+  left: 60rem;
+  /* margin-left: 12rem; */
+}
+
+.image p {
+  font-size: 18px;
+  margin: 0;
+  position: relative;
+  left: 60rem;
+}
+
+/* more-info */
+
+.more-info {
+  margin-top: 11rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.more-info {
+  display: flex; /* Aligns child elements (image and text) horizontally */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  padding: 20px;
+}
+
+.card {
+  display: flex; /* Align image and text side by side */
+  justify-content: space-between;
+  width: 100%; /* Ensures the card takes up full width */
+}
+
+.image {
+  flex: 1; /* Takes up flexible space for the image */
+  margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.image img {
+  width: 100%; /* Makes the image take full width of its container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.texts {
+  flex: 2; /* Takes up more space than the image */
+  max-width: 60%; /* Limits the width of the text section */
+}
+
+.sub-head {
+  font-size: 1.8em; /* Customize the heading size */
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 1em;
+  line-height: 1.6;
+  
+}
