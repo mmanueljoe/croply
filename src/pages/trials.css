@@ -7,6 +7,9 @@
   width: 100%;            /* Full width */
   padding: 20px;
   position: fixed;
+  z-index: 999;
+  background-color: white;
+  top: 6.2rem;
 }
 
 .sub {
@@ -71,15 +74,14 @@
 }
 
 .image img {
-  width: 40px; /* Adjust the size of the logo */
+  width: 38px; /* Adjust the size of the logo */
   height: auto;
   position: relative;
   left: 60rem;
-  /* margin-left: 12rem; */
 }
 
 .image p {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   position: relative;
   left: 60rem;
@@ -88,9 +90,9 @@
 /* more-info */
 
 .more-info {
-  margin-top: 11rem;
+  margin-top: 9rem;
   width: 100%;
-  border: 1px solid black;
+ 
 }
 
 .more-info {
@@ -101,9 +103,17 @@
 }
 
 .card {
+  border: 1px solid black;
+  border-radius: 10px;
+  gap: 1rem;
   display: flex; /* Align image and text side by side */
   justify-content: space-between;
   width: 100%; /* Ensures the card takes up full width */
+}
+
+.card img{
+  width: 50%;
+  height: 50vh;
 }
 
 .image {
@@ -124,10 +134,26 @@
 .sub-head {
   font-size: 1.8em; /* Customize the heading size */
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .content {
   font-size: 1em;
   line-height: 1.6;
-  
+}
+
+.content .com{
+  text-decoration: underline;
+}
+
+.content .read{
+  background-color: white;
+  border: none;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.486);
+  font-size: 17px;
+}
+
+.last img {
+  width: fit-content;
 }
