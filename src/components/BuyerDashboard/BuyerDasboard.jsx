@@ -5,12 +5,17 @@ import { useState, useEffect } from 'react';
 import SignOutModalBuyer from '../../components/SignOutModalBuyer/SignOutModalBuyer';
 import { TbArrowLeftToArc } from "react-icons/tb";
 import ProfileModal from '../ProfileModal/ProfileModal';
+import { useNavigate } from 'react-router-dom';
+import { GoHome } from "react-icons/go";
+import { LuChartNoAxesCombined } from "react-icons/lu";
+import { PiBoxArrowDownBold } from "react-icons/pi";
 
 
 const BuyerDasboard = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isProfileOpen, setProfileOpen] = useState(false);
+  const navigateToHome = useNavigate();
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -27,7 +32,7 @@ const BuyerDasboard = () => {
   ];
 
   const handleSignOut = () => {
-    console.log("User signed out!");
+    navigateToHome('/');
     setModalOpen(false);
   };
 
@@ -66,12 +71,24 @@ const BuyerDasboard = () => {
               <ul>
                 <li>
                   <NavLink to="" end className={({ isActive }) => isActive ? 'active' : ''}>
+                    <GoHome className='bu-home-icon bu-icon'/>
                     Home
                   </NavLink>
                 </li>
-                <li><NavLink to="market-prices">Market Prices</NavLink></li>
-                <li><NavLink to="marketplace">Marketplace</NavLink></li>
-                <li><NavLink to="orders">Orders</NavLink></li>
+                <li><NavLink to="marketplace">
+                  <FaShoppingCart className='bu-market-icon bu-icon'/>
+                  Marketplace
+                  </NavLink>
+                </li>
+                <li><NavLink to="market-prices">
+                  <LuChartNoAxesCombined className='bu-market-icon bu-icon'/>
+                  Market Prices
+                  </NavLink></li>
+                <li><NavLink to="orders">
+                  <PiBoxArrowDownBold className='bu-orders-icon bu-icon'/>
+                  Orders
+                  </NavLink>
+                </li>
               </ul>
               <button className="bu-sign-out" onClick={() => setModalOpen(true)}>
                 <TbArrowLeftToArc className='bu-sign-icon'/>

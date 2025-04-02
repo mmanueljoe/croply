@@ -1,4 +1,4 @@
-
+import "./SignOutModalFarmer.css"
 
 import PropTypes from 'prop-types';
 
@@ -6,24 +6,24 @@ const SignOutModalFarmer = ({isOpen, onClose, onConfirm}) => {
     if (!isOpen) return null
   return (
     <>
-       <div className="modal-overlay">
-                <div className="modal-container">
+       <div className="fa-modal-overlay">
+                <div className="fa-modal-container">
                     {/* Close Button */}
-                    <div className="close-icon" onClick={onClose}></div>
+                    <div className="fa-close-icon" onClick={onClose}></div>
 
                     {/* Warning Icon */}
-                    <div className="warning-icon"></div>
+                    <div className="fa-warning-icon"></div>
 
                     {/* Modal Title */}
-                    <h1 className="modal-title">Sign Out</h1>
+                    <h1 className="fa-modal-title">Sign Out</h1>
 
                     {/* Confirmation Message */}
-                    <p className="modal-text">Are you sure you want to sign out from your account?</p>
+                    <p className="fa-modal-text">Are you sure you want to sign out from your account?</p>
 
                     {/* Buttons */}
-                    <div className="modal-buttons">
-                        <button className="btn yes-btn" onClick={onConfirm}>Yes</button>
-                        <button className="btn cancel-btn" onClick={onClose}>Cancel</button>
+                    <div className="fa-modal-buttons">
+                        <button className="btn fa-yes-btn" onClick={onConfirm}>Yes</button>
+                        <button className="btn fa-cancel-btn" onClick={onClose}>Cancel</button>
                     </div>
                 </div>
             </div>

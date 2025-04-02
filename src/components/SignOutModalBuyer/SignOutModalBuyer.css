@@ -71,7 +71,7 @@
 .yes-btn {
   padding: 0.5rem 3rem; 
   background: white;
-  border: 2px solid #033B77;
+  border: 2px solid #EF9D2E;
   border-radius: 10px;
   font-size: 1.5rem;
   font-weight: 400;
@@ -83,7 +83,7 @@
 /* Cancel Button */
 .cancel-btn {
   padding: 0.5rem 3rem; 
-  background: #033B77;
+  background: #EF9D2E;
   border-radius: 10px;
   font-size: 1.5rem;
   font-weight: 400;

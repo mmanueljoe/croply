@@ -85,11 +85,12 @@
 }
 
 .fa-sidebar-nav li {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .fa-sidebar-nav a{
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 0.8rem 1rem;
   text-decoration: none;
   color: var(--light-bg);
@@ -97,14 +98,22 @@
   transition: all 0.2s ease;
 }
 
+.fa-icon{
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* Active Link Styling */
-.fa-sidebar-nav a.active{
+.fa-sidebar-nav a.active, .fa-icon.active{
   font-weight: bold;
 }
 
 .fa-sidebar-nav a:hover:not(.active){
   background-color: rgba(255,255,255,0.1);
 }
+
+
 
 
 /* content area */
@@ -130,6 +139,10 @@
   border: none;
   color: var(--light-bg);
   cursor: pointer;
+}
+
+.fa-sign-out::before{
+  content: "";
 }
 
 .fa-sign-out:hover{
