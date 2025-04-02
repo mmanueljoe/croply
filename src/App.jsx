@@ -13,6 +13,7 @@ import BuyerHome from './pages/BuyerHome/BuyerHome';
 import BuyerMarketplace from './pages/BuyerMarketplace/BuyerMarketplace';
 import FarmerListing from './pages/FarmerListing/FarmerListing';
 import { Trials } from './pages/trials';
+import {Cropadvisory} from './pages/cropadvisory';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
               <Route path="resources" element={<h1>Resources</h1>} />
               <Route path="community" element={<h1>Community</h1>}/>
               <Route path="Trials" element={ <Trials /> }/>
+              <Route path="Cropadvisory" element={ <Cropadvisory /> }/>
             </Route>
 
             {/* buyer dashboard */}

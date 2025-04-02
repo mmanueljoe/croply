@@ -1,0 +1,98 @@
+
+.crop-advisory{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+    top: 6rem;
+    height: 12vh;
+  }
+
+
+
+/* Apply grid layout */
+
+.grid-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;  
+    padding: 20px;
+  }
+
+
+  .crop-advisory .cp {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Card style */
+  .card {
+    padding: 20px;
+    text-align: center;
+    border: none;
+  }
+  
+  .cta {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .cta h3 {
+    position: relative;
+    top: -7rem;
+    font-size: 1.7rem;
+  }
+
+  .cta img {
+    width: 100%;
+    border-radius: 10px;   
+  }
+
+  /* ADDED CODES */
+  .cta {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .cta h3 {
+    position: relative;
+    top: -7rem;
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.918);
+    z-index: 999;
+  }
+  
+  .cta img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .cta img {
+    z-index: 0; 
+  }
+  

@@ -12,7 +12,8 @@ export const services = [
       id: 2,
       title: "Crop Advisories",
       description: "Get expert advice on planting, pest control, and harvesting to maximize your farm’s productivity.",
-      image: assets.service2
+      image: assets.service2, 
+      path: "cropadvisory"     
     },
     // more services...
     {
