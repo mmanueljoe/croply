@@ -2,7 +2,7 @@ import React from 'react';
 import "./FarmerResources.css";
 import assets from '../../assets';
 import { Link } from 'react-router-dom';
-import farmerResources from '../../data/farmerResources';
+import farmerResourcesData from '../../data/farmerResources'; // Renamed the import
 
 const FarmerResources = () => {
   return (
@@ -18,7 +18,7 @@ const FarmerResources = () => {
                 </div>
             </div>
             <div className='fa-resources-items'>
-                {farmerResources.map((resource) => (
+                {farmerResourcesData.map((resource) => ( // Changed to farmerResourcesData
                     <Link key={resource.id} to={`/farmer/resources/${resource.id}`}>
                         <div className='fa-resources-item'>
                             <img src={resource.img} alt={resource.title} />
