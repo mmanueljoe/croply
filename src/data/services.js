@@ -21,6 +21,7 @@ export const services = [
       title: "Machinery",
       description: "Find affordable and reliable farming equipment to streamline your operations and increase efficiency.",
       image: assets.service2
+  
     },
 
     {

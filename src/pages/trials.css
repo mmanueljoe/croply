@@ -59,7 +59,7 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 15px;
   pointer-events: none;
 }
 
@@ -91,7 +91,8 @@
 
 .more-info {
   margin-top: 9rem;
-  width: 100%;
+  /* width: 100%; */
+  border: 1px dotted black;
  
 }
 
@@ -99,23 +100,28 @@
   display: flex; /* Aligns child elements (image and text) horizontally */
   align-items: center; /* Centers vertically */
   justify-content: center; /* Centers horizontally */
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 
 .card {
   /* border: 1px solid crimson; */
   border-radius: 10px;
+  width: 100%;
   /* gap: 1rem; */
+  /* border: 2px solid black; */
   display: flex; /* Align image and text side by side */
   justify-content: space-between;
-  width: 100%; /* Ensures the card takes up full width */
+
+  /* padding: 5rem; */
   /* border: 1px solid crimson; */
 }
 
 .card img{
   width: 50%;
-  height: 50vh;
+  height: auto;
+  object-fit: cover;
+
 }
 
 .image {
@@ -134,7 +140,7 @@
 }
 
 .sub-head {
-  font-size: 1.8em; /* Customize the heading size */
+  font-size: 1.3em; /* Customize the heading size */
   margin-bottom: 10px;
   text-align: center;
 }
@@ -159,3 +165,7 @@
 .last img {
   width: fit-content;
 }
+
+
+/* ADDED CODES */
+

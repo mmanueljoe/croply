@@ -3,8 +3,14 @@
    padding: 2rem 2rem;
    display: flex;
    align-items: center;
-   justify-content: flex-end;
+   justify-content: center;
    gap: 2rem;
+   position: fixed;  /* Fixes the navbar at the top */
+   top: 0;  /* Aligns navbar at the top */
+   width: 100%;  /* Makes the navbar span across the full width */
+   background-color: white;  /* Optional: To make navbar visible even on scroll */
+   z-index: 1000;  /* Ensures navbar stays above other content */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar .logo{
@@ -26,6 +32,8 @@
 
 .nav-links a{
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
     color: #000;
     transition: all 0.4s ease-in-out 0s;
 }
@@ -220,6 +228,12 @@
         color: white;
         font-size: 1.2rem;
     }
+
+    .navbar {
+      margin-bottom: 4rem;
+      height: 25%;
+    }
+
 }
 
 
