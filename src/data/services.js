@@ -20,8 +20,8 @@ export const services = [
       id: 3,
       title: "Machinery",
       description: "Find affordable and reliable farming equipment to streamline your operations and increase efficiency.",
-      image: assets.service2
-  
+      image: assets.service2,
+      path:"machinery"
     },
 
     {

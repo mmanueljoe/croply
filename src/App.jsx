@@ -15,7 +15,7 @@ import FarmerResources from './pages/FarmerResources/FarmerResources';
 import FarmerListing from './pages/FarmerListing/FarmerListing';
 import { Trials } from './pages/trials';
 import { Cropadvisory } from './pages/cropadvisory';
-// import { Machinery } from './pages/Machinery';
+import { Machinery } from './pages/Machinery';
 
 
 import { LanguageProvider } from './data/LanguageContext';
@@ -45,7 +45,7 @@ function App() {
             <Route path="community" element={<h1>Community</h1>} />
             <Route path="Trials" element={<Trials />} />
             <Route path="Cropadvisory" element={<Cropadvisory />} />
-            {/* <Route path="machinery" element={<Machinery />} /> */}
+            <Route path="machinery" element={<Machinery />} />
           </Route>
 
           {/* Buyer dashboard */}

@@ -5,11 +5,11 @@
    align-items: center;
    justify-content: center;
    gap: 2rem;
-   position: fixed;  /* Fixes the navbar at the top */
-   top: 0;  /* Aligns navbar at the top */
-   width: 100%;  /* Makes the navbar span across the full width */
-   background-color: white;  /* Optional: To make navbar visible even on scroll */
-   z-index: 1000;  /* Ensures navbar stays above other content */
+   position: fixed; 
+   top: 0;  
+   width: 100%;  
+   background-color: white;  
+   z-index: 1000; 
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
@@ -48,10 +48,6 @@
     box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* ADDED SMALL CODES */
-
-
-/* END OF IT */
 
 /* Hamburger for Mobile */
 .hamburger {

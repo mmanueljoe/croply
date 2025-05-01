@@ -21,13 +21,14 @@ const resources = {
 i18n
   .use(initReactI18next)
   .init({
+     
     resources,
     lng: 'tw', // default language
     fallbackLng: 'tw',
-
     interpolation: {
       escapeValue: false,
     },
   });
 
 export default i18n;
+

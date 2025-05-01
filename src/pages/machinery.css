@@ -1,0 +1,25 @@
+.heads {
+    display: flex;
+    flex-direction: row; /* Align child elements horizontally */
+    align-items: center;    /* Center vertically */
+    justify-content: space-between; /* Distribute space between elements */
+    width: 100%;            
+    padding: 20px;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    top: 6.2rem;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row; /* Align elements horizontally within sub */
+    align-items: center;  /* Center elements vertically within sub */
+    gap: 20px;            /* Space between the sub elements */
+  }
+
+
+.main {
+    margin-top: 5rem;
+}
+  
