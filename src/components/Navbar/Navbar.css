@@ -3,8 +3,14 @@
    padding: 2rem 2rem;
    display: flex;
    align-items: center;
-   justify-content: flex-end;
+   justify-content: center;
    gap: 2rem;
+   position: fixed; 
+   top: 0;  
+   width: 100%;  
+   background-color: white;  
+   z-index: 1000; 
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar .logo{
@@ -26,6 +32,8 @@
 
 .nav-links a{
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
     color: #000;
     transition: all 0.4s ease-in-out 0s;
 }
@@ -40,10 +48,6 @@
     box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* ADDED SMALL CODES */
-
-
-/* END OF IT */
 
 /* Hamburger for Mobile */
 .hamburger {
@@ -220,6 +224,12 @@
         color: white;
         font-size: 1.2rem;
     }
+
+    .navbar {
+      margin-bottom: 4rem;
+      height: 25%;
+    }
+
 }
 
 

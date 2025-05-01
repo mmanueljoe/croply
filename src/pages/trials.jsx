@@ -39,7 +39,8 @@ export const Trials = () => {
             <p className='content'>
               D.I Grow is a liquid foliar fertilizer designed to enhance plant <br/> growth and improve soil quality. <br/>
               It contains a blend of <br /> marcronutrients (such as nitrogen, phosphorus, potassium, and <br /> magnesium), micronutrients (including iron, maganesse, copper, <br /> zinc, boron, and molybdenum), and humic acid. <br />
-              This combination supports various crops, including vegetables, <br /> fruits, and flowers. <span className='com'>cedargro.com</span> <br />
+              This combination supports various crops, including vegetables, <br /> fruits, and flowers.<a className='com' href="https://cedargro.com" target="_blank" rel="noopener noreferrer">cedargro.com</a>
+              <br />
               <button className='read' onClick={() => window.open('https://cedargro.com', '_blank')}>Read more</button>
             </p>
           </div>
@@ -55,7 +56,10 @@ export const Trials = () => {
             <p className='content'>
               Super Gro is an organic liquid fertilizer formulated from poultry <br /> droppings and seabird guano. it's designed to enhance soil <br />
               fertility and promote healthy plant growth. Super Gro acts as a <br /> surfacant, reducing the surface tension of the water, which allows <br />
-              for better water penetration and nutrient absorption by plants. <br /> <span className='com'>agric4profits.com</span> <br />
+              for better water penetration and nutrient absorption by plants. <br /> <a className='com' href="https://agric4profits.com" target="_blank" rel="noopener noreferrer">
+  agric4profits.com
+</a>
+ <br />
               <button className='read' onClick={() => window.open('https://agric4profits.com', '_blank')}>Read more</button>
             </p>
           </div>
@@ -74,7 +78,10 @@ export const Trials = () => {
             vitamins, enzymes, amino acid, and plant hormones that <br />
             promote natural growth regulation. Algifol is suitable for a <br />
             wide range of plants, including soft fruits, fruit trees, vegetables, <br />
-            flowers, and grains. <span className='com'>greenfertilizersghana.com</span> <br />
+            flowers, and grains. <a className='com' href="https://greenfertilizersghana.com" target="_blank" rel="noopener noreferrer">
+  greenfertilizersghana.com
+</a>
+ <br />
               <button className='read' onClick={() => window.open('https://greenfertilizersghana.com', '_blank')}>Read more</button>
             </p>
           </div>
@@ -91,7 +98,10 @@ export const Trials = () => {
             ProtiFert is a certified organic liquid fertilizer designed to <br />
             boost plant vitality. it's suitable for a variety of crops, including <br />
             vegetables, fruits, and ornamentals. ProtiFert enhances soil <br />
-            fertility and promotes healthy plant growth. <br /> greenfertilizersghana.com <br />
+            fertility and promotes healthy plant growth. <br /><a className="com" href="https://greenfertilizersghana.com" target="_blank" rel="noopener noreferrer">
+  greenfertilizersghana.com
+</a>
+ <br />
               <button className='read' onClick={() => window.open('https://greenfertilizersghana.com', '_blank')}>Read more</button>
             </p>
           </div>
