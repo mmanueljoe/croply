@@ -1,8 +1,8 @@
 .heads {
     display: flex;
-    flex-direction: row; /* Align child elements horizontally */
-    align-items: center;    /* Center vertically */
-    justify-content: space-between; /* Distribute space between elements */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
     width: 100%;            
     padding: 20px;
     position: fixed;
@@ -13,13 +13,70 @@
 
 .sub {
     display: flex;
-    flex-direction: row; /* Align elements horizontally within sub */
-    align-items: center;  /* Center elements vertically within sub */
-    gap: 20px;            /* Space between the sub elements */
+    flex-direction: row; 
+    align-items: center;  
   }
 
 
 .main {
     margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.main .main__container{
+    width: 100%;
 }
   
+.main .main__container  .subheader__container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+
+.main .main__container .main__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.main .main__container .main__cards img {
+    width: 300px;
+}
+
+.main .main__container .main__cards  .tr {
+    margin-top: 1.5rem;
+    font-size: 1rem; 
+
+}
+
+.main .main__container .main__cards   .par{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    color: #00000065;
+}
+
+.main .main__container .main__cards .btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.main .main__container  .sub_cards-flex{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px;
+    border: 1px solid black;
+    border-top: none;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    padding: 10px;
+    position: relative;
+    top: -2rem;
+}
